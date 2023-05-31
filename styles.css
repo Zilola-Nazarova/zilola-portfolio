@@ -20,18 +20,18 @@ nav .menu {
 #headline {
   display: flex;
   flex-direction: column;
+  background-image: url(./images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
 }
 
 .text-block {
-  margin: 1.875rem 0.9rem 2rem 0.875rem;
-}
-
-img.decoration {
-  margin-bottom: 3rem;
+  margin: 1.875rem 0.9rem 232px 1rem;
 }
 
 h1.playfair {
-  line-height: 3rem;
+  line-height: 3.125rem;
   font-size: 3.125rem;
   font-weight: 400;
   margin-bottom: 1.063rem;
@@ -44,7 +44,7 @@ p.poppins {
 
 a.poppins {
   display: block;
-  height: 3rem;
+  height: 3.125rem;
   margin-top: 1.375rem;
   text-align: center;
   padding-top: 0.8rem;
