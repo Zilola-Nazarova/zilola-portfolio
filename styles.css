@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1.playfair {
+  font-size: 312.5%;
+}
+
+p.poppins {
+  font-size: 88%;
+}
+
+a.poppins {
+  font-size: 100%;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.dark-blue {
+  color: #1a2236;
+}
+
+.white {
+  color: white;
+}
