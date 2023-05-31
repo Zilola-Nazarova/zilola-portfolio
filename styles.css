@@ -6,14 +6,17 @@
 
 h1.playfair {
   font-size: 312.5%;
+  font-weight: 400;
 }
 
 p.poppins {
   font-size: 88%;
+  font-weight: 400;
 }
 
 a.poppins {
   font-size: 100%;
+  font-weight: 500;
 }
 
 .poppins {
