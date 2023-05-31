@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+nav {
+  height: 74px;
+  background-image: url(./images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
 #headline {
   display: flex;
   flex-direction: column;
