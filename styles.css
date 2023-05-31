@@ -51,6 +51,19 @@ a.poppins {
   font-size: 1rem;
   font-weight: 500;
   background-color: #1a2236;
+  vertical-align: middle;
+}
+
+a.poppins:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+a.poppins:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
 }
 
 .poppins {
