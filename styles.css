@@ -9,6 +9,12 @@ nav {
   background-image: url(./images/image_geometry_1.png);
   background-repeat: no-repeat;
   display: flex;
+  justify-content: flex-end;
+}
+
+nav .menu {
+  margin-top: 19px;
+  margin-right: 14px;
 }
 
 #headline {
