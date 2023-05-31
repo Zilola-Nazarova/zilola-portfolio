@@ -20,7 +20,14 @@ nav .menu {
 #headline {
   display: flex;
   flex-direction: column;
-  margin: 1.875rem 0.9rem 2rem 1rem;
+}
+
+.text-block {
+  margin: 1.875rem 0.9rem 3rem 1rem;
+}
+
+img.decoration {
+  margin-top: 2rem;
 }
 
 h1.playfair {
