@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 230px;
+}
+
+nav {
+  height: 4.625rem;
+  background-image: url(./images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .menu {
+  margin-top: 1.188rem;
+  margin-right: 0.875rem;
+}
+
+#headline {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.text-block {
+  margin: 1.875rem 0.9rem 232px 1rem;
+}
+
+h1.playfair {
+  line-height: 3.125rem;
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin-bottom: 1.063rem;
+}
+
+p.poppins {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+a.poppins {
+  display: block;
+  height: 3.125rem;
+  margin-top: 1.375rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1a2236;
+  vertical-align: middle;
+}
+
+a.poppins:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+a.poppins:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.dark-blue {
+  color: #1a2236;
+}
+
+.white {
+  color: white;
+}
