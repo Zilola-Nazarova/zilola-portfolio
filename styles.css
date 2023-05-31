@@ -23,16 +23,18 @@ nav .menu {
 }
 
 .text-block {
-  margin: 1.875rem 0.9rem 3rem 1rem;
+  margin: 1.875rem 0.9rem 2rem 1rem;
 }
 
 img.decoration {
-  margin-top: 2rem;
+  margin-bottom: 40px;
 }
 
 h1.playfair {
+  line-height: 50px;
   font-size: 312.5%;
   font-weight: 400;
+  margin-bottom: 17px;
 }
 
 p.poppins {
@@ -41,6 +43,11 @@ p.poppins {
 }
 
 a.poppins {
+  display: block;
+  height: 50px;
+  margin-top: 22px;
+  text-align: center;
+  padding-top: 12px;
   font-size: 100%;
   font-weight: 500;
   background-color: #1a2236;
