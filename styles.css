@@ -89,3 +89,7 @@ button.collaboration:active {
 .white {
   color: white;
 }
+
+.work-card img {
+  width: 100%;
+}
