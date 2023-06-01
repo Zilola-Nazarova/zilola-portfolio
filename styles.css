@@ -100,11 +100,18 @@ button.collaboration:active {
 
 .work-info {
   background-color: #1a2236;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-card img {
   display: block;
   width: 100%;
+}
+
+.category-list {
+  margin-top: 1rem;
 }
 
 .category-list li {
@@ -113,4 +120,5 @@ button.collaboration:active {
 
 .see-project {
   border: 1px solid #FFFFFF;
+  margin-top: 20px;
 }
