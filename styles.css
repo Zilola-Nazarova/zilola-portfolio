@@ -90,6 +90,12 @@ button.collaboration:active, a.see-project:active {
   color: white;
 }
 
+#work-section {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 0;
+}
+
 #work-section h2 {
   display: inline-block;
   margin: 0 auto 2rem 1rem;
