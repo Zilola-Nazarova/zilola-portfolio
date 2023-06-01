@@ -149,3 +149,14 @@ a.see-project {
   font-size: 1rem;
   line-height: 24px;
 }
+
+#about-myself {
+  margin: 56px 14px 27px 16px;
+  display: flex;
+}
+
+.knowledge {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 1rem;
+}
