@@ -90,6 +90,19 @@ button.collaboration:active {
   color: white;
 }
 
+.work-card {
+  background-color: #1a2236;
+}
+
 .work-card img {
+  display: block;
   width: 100%;
+}
+
+.category-list li {
+  background-color: #98dede;
+}
+
+.see-project {
+  border: 1px solid #FFFFFF;
 }
