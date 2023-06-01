@@ -46,7 +46,7 @@ h1.playfair {
   margin-bottom: 1.063rem;
 }
 
-p.poppins {
+#headline p.poppins {
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -110,15 +110,27 @@ button.collaboration:active {
   width: 100%;
 }
 
+.project-name {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1rem;
+}
+
 .category-list {
   margin-top: 1rem;
 }
 
 .category-list li {
   background-color: #98dede;
+  font-weight: 300;
+  font-size: 10.33px;
+  line-height: 8px;
 }
 
 .see-project {
   border: 1px solid #FFFFFF;
   margin-top: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
 }
