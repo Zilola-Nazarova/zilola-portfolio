@@ -153,6 +153,19 @@ a.see-project {
 #about-myself-section {
   margin: 56px 14px 27px 16px;
   display: flex;
+  flex-direction: column;
+}
+
+#about-myself-section h2 {
+  margin-bottom: 20px;
+}
+
+#about-myself-section p {
+  margin-bottom: 20px;
+}
+
+#about-myself-section button {
+  margin-bottom: 27px;
 }
 
 .knowledge {
