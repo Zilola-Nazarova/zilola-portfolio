@@ -187,21 +187,40 @@ a.see-project {
 .knowledge h3 {
   font-size: 20px;
   font-weight: 800;
+  margin-bottom: 21px;
 }
 
 .knowledge ul {
   font-size: 18px;
   font-weight: 600;
+  list-style-position: inside;
+  padding-left: -10px;
+}
+
+.knowledge li span {
+  position: relative;
+  left: -12px;
+}
+
+.knowledge div {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 289px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .knowledge div.languages {
-  background-image: url(./images/Rectangle\ 41.png);
+  background-color: #1C528A;
+  background-image: url(./images/hashtag.png); 
 }
 
 .knowledge div.frameworks {
-  background-image: url(./images/Rectangle\ 42.png);
+  background-color: #E2505C;
+  background-image: url(./images/Group\ 18.png);
 }
 
 .knowledge div.skills {
-  background-image: url(./images/Rectangle\ 39.png);
+  background-color: #FEBF52;
+  background-image: url(./images/ic_skills.png);
 }
