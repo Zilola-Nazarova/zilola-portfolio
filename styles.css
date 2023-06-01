@@ -158,18 +158,38 @@ a.see-project {
 
 #about-myself-section h2 {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 #about-myself-section p {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: ;
 }
 
 #about-myself-section button {
+  border: none;
   margin-bottom: 27px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
 }
 
 .knowledge {
   display: grid;
   grid-template-rows: min-content;
   row-gap: 1rem;
+}
+
+.knowledge h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.knowledge ul {
+  font-size: 18px;
+  font-weight: 800;
 }
