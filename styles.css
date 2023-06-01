@@ -193,3 +193,15 @@ a.see-project {
   font-size: 18px;
   font-weight: 800;
 }
+
+.knowledge div.languages {
+  background-image: url(./images/Rectangle\ 41.png);
+}
+
+.knowledge div.frameworks {
+  background-image: url(./images/Rectangle\ 42.png);
+}
+
+.knowledge div.skills {
+  background-image: url(./images/Rectangle\ 39.png);
+}
