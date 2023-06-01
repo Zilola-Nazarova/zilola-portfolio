@@ -22,8 +22,8 @@ nav .menu {
 }
 
 #headline {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 40px;
   background-image: url(./images/image_geometry_2.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -31,7 +31,12 @@ nav .menu {
 }
 
 .text-block {
-  margin: 1.875rem 0.9rem 232px 1rem;
+  margin: 0 0.9rem 0 1rem;
+  min-height: calc(100vh - 74px - 70px);
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 h1.playfair {
@@ -46,25 +51,24 @@ p.poppins {
   font-weight: 400;
 }
 
-a.poppins {
+button.collaboration {
   display: block;
   height: 3.125rem;
   margin-top: 1.375rem;
-  text-align: center;
-  padding-top: 0.8rem;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: #1a2236;
   font-size: 1rem;
   font-weight: 500;
-  background-color: #1a2236;
-  vertical-align: middle;
 }
 
-a.poppins:hover {
+button.collaboration:hover {
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
 }
 
-a.poppins:active {
+button.collaboration:active {
   border: 2px solid #1a2236;
   background-color: white;
   color: #1a2236;
