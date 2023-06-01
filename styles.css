@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 230px;
+  min-width: 14.375rem;
 }
 
 nav {
@@ -22,8 +22,8 @@ nav .menu {
 }
 
 #headline {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 1.875rem;
+  margin-bottom: 2.5rem;
   background-image: url(./images/image_geometry_2.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -32,8 +32,8 @@ nav .menu {
 
 .text-block {
   margin: 0 0.9rem 0 1rem;
-  min-height: calc(100vh - 74px - 70px);
-  padding-bottom: 160px;
+  min-height: calc(100vh - 9rem);
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -46,7 +46,7 @@ h1.playfair {
   margin-bottom: 1.063rem;
 }
 
-p.poppins {
+#headline p.poppins {
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -62,13 +62,44 @@ button.collaboration {
   font-weight: 500;
 }
 
-button.collaboration:hover {
+a.see-project {
+  border: 1px solid #fff;
+  background-image: url(./images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center right 0.688rem;
+  width: 11.125rem;
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+
+#about-myself-section button {
+  border: none;
+  background-position: center right 2.75rem;
+  margin-bottom: 1.688rem;
+  background-color: #1a2236;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.collaboration:hover,
+a.see-project:hover,
+#about-myself-section button:hover {
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
 }
 
-button.collaboration:active {
+button.collaboration:active,
+a.see-project:active,
+#about-myself-section button:active {
   border: 2px solid #1a2236;
   background-color: white;
   color: #1a2236;
@@ -88,4 +119,120 @@ button.collaboration:active {
 
 .white {
   color: white;
+}
+
+#work-section {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 0;
+}
+
+#work-section h2 {
+  display: inline-block;
+  margin: 0 auto 2rem 1rem;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+}
+
+.work-info {
+  background-color: #1a2236;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card img {
+  display: block;
+  width: 100%;
+}
+
+.project-name {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+.category-list {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.category-list li {
+  display: inline-block;
+  background-color: #98dede;
+  margin-right: 0.625rem;
+  padding: 0.375rem 0.625rem;
+  font-weight: 300;
+  font-size: 0.646rem;
+  line-height: 0.5rem;
+}
+
+#about-myself-section {
+  margin: 3.5rem 0.875rem 1.688rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-myself-section h2 {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+}
+
+#about-myself-section > p {
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+#about-myself-section button img {
+  margin-left: 1.25rem;
+}
+
+.knowledge {
+  display: grid;
+  grid-template-rows: min-content;
+  row-gap: 1rem;
+}
+
+.knowledge h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.313rem;
+}
+
+.knowledge ul {
+  font-size: 1.125rem;
+  font-weight: 600;
+  list-style-position: inside;
+}
+
+.knowledge li span {
+  position: relative;
+  left: -0.75rem;
+}
+
+.knowledge div {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 18rem;
+  padding-top: 3.125rem;
+  padding-left: 3.125rem;
+}
+
+.knowledge div.languages {
+  background-color: #1c528a;
+  background-image: url(./images/hashtag.png);
+}
+
+.knowledge div.frameworks {
+  background-color: #e2505c;
+  background-image: url(./images/Group\ 18.png);
+}
+
+.knowledge div.skills {
+  background-color: #febf52;
+  background-image: url(./images/ic_skills.png);
 }
