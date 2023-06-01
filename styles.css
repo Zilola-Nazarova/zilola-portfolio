@@ -62,13 +62,13 @@ button.collaboration {
   font-weight: 500;
 }
 
-button.collaboration:hover, a.see-project:hover {
+button.collaboration:hover, a.see-project:hover, #about-myself-section button:hover {
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
 }
 
-button.collaboration:active, a.see-project:active {
+button.collaboration:active, a.see-project:active, #about-myself-section button:active {
   border: 2px solid #1a2236;
   background-color: white;
   color: #1a2236;
@@ -163,7 +163,7 @@ a.see-project {
   line-height: 50px;
 }
 
-#about-myself-section p {
+#about-myself-section>p {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -172,10 +172,19 @@ a.see-project {
 
 #about-myself-section button {
   border: none;
+  background-position: center right 44px;
   margin-bottom: 27px;
+  background-color: #1a2236;
+  height: 50px;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-myself-section button img {
+  margin-left: 20px;
 }
 
 .knowledge {
