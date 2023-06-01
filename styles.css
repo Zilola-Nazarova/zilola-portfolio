@@ -62,13 +62,13 @@ button.collaboration {
   font-weight: 500;
 }
 
-button.collaboration:hover {
+button.collaboration:hover, a.see-project:hover {
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
 }
 
-button.collaboration:active {
+button.collaboration:active, a.see-project:active {
   border: 2px solid #1a2236;
   background-color: white;
   color: #1a2236;
