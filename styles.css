@@ -63,7 +63,7 @@ button.collaboration {
 }
 
 a.see-project {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   background-image: url(./images/Union.png);
   background-repeat: no-repeat;
   background-position: center right 0.688rem;
@@ -88,16 +88,16 @@ a.see-project {
   align-items: center;
 }
 
-button.collaboration:hover, 
-a.see-project:hover, 
+button.collaboration:hover,
+a.see-project:hover,
 #about-myself-section button:hover {
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
 }
 
-button.collaboration:active, 
-a.see-project:active, 
+button.collaboration:active,
+a.see-project:active,
 #about-myself-section button:active {
   border: 2px solid #1a2236;
   background-color: white;
