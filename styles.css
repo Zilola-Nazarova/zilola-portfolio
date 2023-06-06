@@ -271,7 +271,7 @@ a.see-project {
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
   font-size: 0.875rem;
-  color: #7D7C84;
+  color: #7d7c84;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
@@ -287,7 +287,7 @@ a.see-project {
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  border-color: #1A2236;
+  border-color: #1a2236;
   outline: none;
 }
 
@@ -324,7 +324,7 @@ footer {
   padding: 1.75rem 0.875rem 2.25rem 1.125rem;
 }
 
-footer button {
+#footer button {
   border: none;
   background-color: transparent;
   background-image: url(./images/ic_link_teal.png);
@@ -340,17 +340,17 @@ footer button {
   margin: 0 auto;
 }
 
-footer button:active {
+#footer button:active {
   color: #fff;
 }
 
-footer ul {
+#footer ul {
   margin-top: 1.56rem;
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-footer ul li+li {
+#footer ul li + li {
   margin-left: 1.81rem;
 }
