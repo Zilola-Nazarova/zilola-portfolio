@@ -265,7 +265,47 @@ a.see-project:active,
   color: #7d7c84;
 }
 
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #1A2236;
+  border-radius: 4px;
+}
+
+#contact-form input {
+  margin-bottom: 10px;
+  height: 52px;
+  padding: 23px 16px 5px 16px;
+}
+
+#contact-form textarea {
+  height: 112px;
+  padding: 14px 16px;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  font-size: 14px;
+  color: #7D7C84;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+#contact-form input::placeholder {
+  color: #1a2236;
+}
+
+#contact-form input#user-email::placeholder {
+  color: #1a2236;
+  font-size: 16px;
+}
+
 #contact-form button {
+  width: 100%;
+  height: 44px;
+  border: none;
+  background-color: #1a2236;
   margin-top: 20px;
   font-weight: 500;
   font-size: 16px;
