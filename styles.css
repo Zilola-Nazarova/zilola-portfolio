@@ -301,24 +301,6 @@ a.see-project {
   font-size: 1rem;
 }
 
-#contact-form button:hover,
-button.collaboration:hover,
-a.see-project:hover,
-#about-myself-section button:hover {
-  border: 1px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
-#contact-form button:active,
-button.collaboration:active,
-a.see-project:active,
-#about-myself-section button:active {
-  border: 2px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
 footer {
   background-color: #1a2236;
   padding: 1.75rem 0.875rem 2.25rem 1.125rem;
@@ -342,6 +324,24 @@ footer {
 
 #footer button:active {
   color: #fff;
+}
+
+#contact-form button:hover,
+button.collaboration:hover,
+a.see-project:hover,
+#about-myself-section button:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+#contact-form button:active,
+button.collaboration:active,
+a.see-project:active,
+#about-myself-section button:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
 }
 
 #footer ul {
