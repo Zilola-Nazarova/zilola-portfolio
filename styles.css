@@ -318,3 +318,39 @@ a.see-project:active,
   background-color: white;
   color: #1a2236;
 }
+
+footer {
+  background-color: #1a2236;
+  padding: 28px 14px 36px 18px;
+}
+
+footer button {
+  border: none;
+  background-color: transparent;
+  background-image: url(./images/ic_link_teal.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 24px;
+  color: #92dcdc;
+  display: block;
+  width: 164px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+footer button:active {
+  color: #fff;
+}
+
+footer ul {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer ul li+li {
+  margin-left: 29px;
+}
