@@ -269,7 +269,7 @@ a.see-project:active,
 #contact-form textarea {
   display: block;
   width: 100%;
-  border: 1px solid #1A2236;
+  border: 1px solid #dfdfe0;
   border-radius: 4px;
 }
 
@@ -299,6 +299,12 @@ a.see-project:active,
 #contact-form input#user-email::placeholder {
   color: #1a2236;
   font-size: 16px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #1A2236;
+  outline: none;
 }
 
 #contact-form button {
