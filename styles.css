@@ -242,17 +242,21 @@ a.see-project:active,
   background-image: url(./images/image_geometry_3.png);
   background-repeat: no-repeat;
   padding: 106px 14px 31px 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact-form h2 {
   font-size: 50px;
   font-weight: 400;
   line-height: 50px;
+  margin-bottom: 20px;
 }
 
 #contact-form p {
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 14px;
 }
 
 #contact-form label {
@@ -262,6 +266,7 @@ a.see-project:active,
 }
 
 #contact-form button {
+  margin-top: 20px;
   font-weight: 500;
   font-size: 16px;
 }
