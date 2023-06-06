@@ -62,49 +62,6 @@ button.collaboration {
   font-weight: 500;
 }
 
-a.see-project {
-  border: 1px solid #fff;
-  background-image: url(./images/Union.png);
-  background-repeat: no-repeat;
-  background-position: center right 0.688rem;
-  width: 11.125rem;
-  margin-top: 1.25rem;
-  padding: 0.625rem;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  line-height: 1.5rem;
-}
-
-#about-myself-section button {
-  border: none;
-  background-position: center right 2.75rem;
-  margin-bottom: 1.688rem;
-  background-color: #1a2236;
-  height: 3.125rem;
-  font-weight: 500;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button.collaboration:hover,
-a.see-project:hover,
-#about-myself-section button:hover {
-  border: 1px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
-button.collaboration:active,
-a.see-project:active,
-#about-myself-section button:active {
-  border: 2px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
 .poppins {
   font-family: 'Poppins', sans-serif;
 }
@@ -168,6 +125,20 @@ a.see-project:active,
   line-height: 0.5rem;
 }
 
+a.see-project {
+  border: 1px solid #fff;
+  background-image: url(./images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center right 0.688rem;
+  width: 11.125rem;
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+
 #about-myself-section {
   margin: 3.5rem 0.875rem 1.688rem 1rem;
   display: flex;
@@ -185,6 +156,19 @@ a.see-project:active,
   margin-bottom: 1.25rem;
   font-weight: 400;
   font-size: 0.875rem;
+}
+
+#about-myself-section button {
+  border: none;
+  background-position: center right 2.75rem;
+  margin-bottom: 1.688rem;
+  background-color: #1a2236;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-myself-section button img {
@@ -315,4 +299,22 @@ a.see-project:active,
   margin-top: 20px;
   font-weight: 500;
   font-size: 16px;
+}
+
+#contact-form button:hover,
+button.collaboration:hover,
+a.see-project:hover,
+#about-myself-section button:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+#contact-form button:active,
+button.collaboration:active,
+a.see-project:active,
+#about-myself-section button:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
 }
