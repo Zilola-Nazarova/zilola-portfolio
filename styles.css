@@ -225,27 +225,27 @@ a.see-project {
   background-color: #f9f9fa;
   background-image: url(./images/image_geometry_3.png);
   background-repeat: no-repeat;
-  padding: 106px 14px 31px 18px;
+  padding: 6.625rem 0.875rem 1.94rem 1.125rem;
   display: flex;
   flex-direction: column;
 }
 
 #contact-form h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 400;
-  line-height: 50px;
-  margin-bottom: 20px;
+  line-height: 3.125rem;
+  margin-bottom: 1.25rem;
 }
 
 #contact-form p {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 
 #contact-form label {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #7d7c84;
 }
 
@@ -258,19 +258,19 @@ a.see-project {
 }
 
 #contact-form input {
-  margin-bottom: 10px;
-  height: 52px;
-  padding: 23px 16px 5px 16px;
+  margin-bottom: 0.625rem;
+  height: 3.25rem;
+  padding: 1.44rem 1rem 0.31rem 1rem;
 }
 
 #contact-form textarea {
-  height: 112px;
-  padding: 14px 16px;
+  height: 7rem;
+  padding: 0.875rem 1rem;
 }
 
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #7D7C84;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -282,7 +282,7 @@ a.see-project {
 
 #contact-form input#user-email::placeholder {
   color: #1a2236;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #contact-form input:focus,
@@ -293,12 +293,12 @@ a.see-project {
 
 #contact-form button {
   width: 100%;
-  height: 44px;
+  height: 2.75rem;
   border: none;
   background-color: #1a2236;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #contact-form button:hover,
@@ -321,7 +321,7 @@ a.see-project:active,
 
 footer {
   background-color: #1a2236;
-  padding: 28px 14px 36px 18px;
+  padding: 1.75rem 0.875rem 2.25rem 1.125rem;
 }
 
 footer button {
@@ -330,12 +330,12 @@ footer button {
   background-image: url(./images/ic_link_teal.png);
   background-repeat: no-repeat;
   background-position: right;
-  height: 24px;
+  height: 1.5rem;
   color: #92dcdc;
   display: block;
-  width: 164px;
+  width: 10.25rem;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
   margin: 0 auto;
 }
@@ -345,12 +345,12 @@ footer button:active {
 }
 
 footer ul {
-  margin-top: 25px;
+  margin-top: 1.56rem;
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
 footer ul li+li {
-  margin-left: 29px;
+  margin-left: 1.81rem;
 }
