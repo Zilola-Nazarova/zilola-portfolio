@@ -236,3 +236,10 @@ a.see-project:active,
   background-color: #febf52;
   background-image: url(./images/ic_skills.png);
 }
+
+#contact-form {
+  background-color: #f9f9fa;
+  background-image: url(./images/image_geometry_3.png);
+  background-repeat: no-repeat;
+  padding: 106px 14px 31px 18px;
+}
