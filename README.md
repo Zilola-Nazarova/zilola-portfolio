@@ -63,7 +63,7 @@ The repository also contains files for setting up linters and validators.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- there's no working link for this project
+- use this link to visit my Personal portfolio Website [Zilola Nazarova](https://zilola-nazarova.github.io/zilola-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +126,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 👤 Zilola Nazarova
 
 - GitHub: [@Zilola-Nazarova](https://github.com/Zilola-Nazarova)
-- Twitter: [@ZilolaNazarova6](https://twitter.com/NazarovaZi)
+- Twitter: [@NazarovaZi](https://twitter.com/NazarovaZi)
 - LinkedIn: [Zilola Nazarova](https://www.linkedin.com/in/zilola-nazarova-a64858265/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,7 +137,7 @@ You can deploy this project adding new lines of code to index.html and styles.cs
 Future features will be implemented in a new branch and will include new sections of this website.
 
 You can see the details here:
-https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/2_mobile.md
+https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/sneak_peek.md
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,9 +166,6 @@ I would also like to thank previous project reviewers for their advice. Thanks t
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **Why is it 12.x node-version on the line 16 of the linters.yml file?**
-
-  - I had to change 18.x node-version to 12.x because my Xubuntu system on my VM doesn't allow me to install other versions of node except 12.x. I tried to install the new version of node.js in many different ways, but it didn't work. If you know the way to install it please contact me using my Author links.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
