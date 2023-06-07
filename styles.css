@@ -62,49 +62,6 @@ button.collaboration {
   font-weight: 500;
 }
 
-a.see-project {
-  border: 1px solid #fff;
-  background-image: url(./images/Union.png);
-  background-repeat: no-repeat;
-  background-position: center right 0.688rem;
-  width: 11.125rem;
-  margin-top: 1.25rem;
-  padding: 0.625rem;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  line-height: 1.5rem;
-}
-
-#about-myself-section button {
-  border: none;
-  background-position: center right 2.75rem;
-  margin-bottom: 1.688rem;
-  background-color: #1a2236;
-  height: 3.125rem;
-  font-weight: 500;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button.collaboration:hover,
-a.see-project:hover,
-#about-myself-section button:hover {
-  border: 1px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
-button.collaboration:active,
-a.see-project:active,
-#about-myself-section button:active {
-  border: 2px solid #1a2236;
-  background-color: white;
-  color: #1a2236;
-}
-
 .poppins {
   font-family: 'Poppins', sans-serif;
 }
@@ -168,6 +125,20 @@ a.see-project:active,
   line-height: 0.5rem;
 }
 
+a.see-project {
+  border: 1px solid #fff;
+  background-image: url(./images/Union.png);
+  background-repeat: no-repeat;
+  background-position: center right 0.688rem;
+  width: 11.125rem;
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+
 #about-myself-section {
   margin: 3.5rem 0.875rem 1.688rem 1rem;
   display: flex;
@@ -185,6 +156,19 @@ a.see-project:active,
   margin-bottom: 1.25rem;
   font-weight: 400;
   font-size: 0.875rem;
+}
+
+#about-myself-section button {
+  border: none;
+  background-position: center right 2.75rem;
+  margin-bottom: 1.688rem;
+  background-color: #1a2236;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-myself-section button img {
@@ -235,4 +219,138 @@ a.see-project:active,
 .knowledge div.skills {
   background-color: #febf52;
   background-image: url(./images/ic_skills.png);
+}
+
+#contact-form {
+  background-color: #f9f9fa;
+  background-image: url(./images/image_geometry_3.png);
+  background-repeat: no-repeat;
+  padding: 6.625rem 0.875rem 1.94rem 1.125rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form h2 {
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+
+#contact-form p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.875rem;
+}
+
+#contact-form label {
+  font-weight: 400;
+  font-size: 0.625rem;
+  color: #7d7c84;
+}
+
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+}
+
+#contact-form input {
+  margin-bottom: 0.625rem;
+  height: 3.25rem;
+  padding: 1.44rem 1rem 0.31rem 1rem;
+}
+
+#contact-form textarea {
+  height: 7rem;
+  padding: 0.875rem 1rem;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  font-size: 0.875rem;
+  color: #7d7c84;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+#contact-form input::placeholder {
+  color: #1a2236;
+}
+
+#contact-form input#user-email::placeholder {
+  color: #1a2236;
+  font-size: 1rem;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #1a2236;
+  outline: none;
+}
+
+#contact-form button {
+  width: 100%;
+  height: 2.75rem;
+  border: none;
+  background-color: #1a2236;
+  margin-top: 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #1a2236;
+  padding: 1.75rem 0.875rem 2.25rem 1.125rem;
+}
+
+#footer button {
+  border: none;
+  background-color: transparent;
+  background-image: url(./images/ic_link_teal.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 1.5rem;
+  color: #92dcdc;
+  display: block;
+  width: 10.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#footer button:active {
+  color: #fff;
+}
+
+#contact-form button:hover,
+button.collaboration:hover,
+a.see-project:hover,
+#about-myself-section button:hover {
+  border: 1px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+#contact-form button:active,
+button.collaboration:active,
+a.see-project:active,
+#about-myself-section button:active {
+  border: 2px solid #1a2236;
+  background-color: white;
+  color: #1a2236;
+}
+
+#footer ul {
+  margin-top: 1.56rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#footer ul li + li {
+  margin-left: 1.81rem;
 }
