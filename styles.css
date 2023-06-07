@@ -354,3 +354,37 @@ a.see-project:active,
 #footer ul li + li {
   margin-left: 1.81rem;
 }
+
+@media only screen and (min-width: 768px) {
+
+  #headline {
+    height: auto;
+    background-image: url("./images/image-geometry_1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: unset;
+  }
+
+  #work-section  {
+    background-image: url("./images/image-geometry_2.png"), url("./images/image-geometry_3.png"), url("./images/image-geometry_4.png"), url("./images/image-geometry_5.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: ;
+  }
+
+  #about-myself-section {
+    background-image: url("./images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-position: bottom 150px left 516px;
+  }
+
+  #contact-form {
+    background-image: url("./images/image-geometry_6.png"), url("./images/image-geometry_7.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  #footer {
+    
+  }
+  
+}
