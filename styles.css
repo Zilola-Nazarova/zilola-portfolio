@@ -351,6 +351,10 @@ a.see-project:active,
   list-style: none;
 }
 
+#footer a {
+  display: flex;
+}
+
 #footer ul li + li {
   margin-left: 1.81rem;
 }
@@ -358,7 +362,6 @@ a.see-project:active,
 @media only screen and (min-width: 768px) {
 
   #headline {
-    height: auto;
     background-image: url("./images/image-geometry_1.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -368,7 +371,7 @@ a.see-project:active,
   #work-section  {
     background-image: url("./images/image-geometry_2.png"), url("./images/image-geometry_3.png"), url("./images/image-geometry_4.png"), url("./images/image-geometry_5.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: ;
+    /* background-position: ; */
   }
 
   #about-myself-section {
@@ -384,7 +387,29 @@ a.see-project:active,
   }
 
   #footer {
-    
+    padding: 3rem 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer ul {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 2rem;
+  }
+
+  #footer ul li + li {
+    margin: 0;
+  }
+
+  #footer button {
+    margin: 0;
+    font-size: 18px;
+    padding-right: 48px;
+    width: fit-content;
+    height: 27px;
   }
   
 }
