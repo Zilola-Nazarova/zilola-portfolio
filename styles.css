@@ -365,14 +365,41 @@ a.see-project:active,
 }
 
 @media only screen and (min-width: 768px) {
+  nav {
+    height: 100px;
+    box-shadow: 0px 0.5px 0px #DDDFE6;
+    background-image: none;
+    justify-content: center;
+  }
+
+  nav a.menu {
+    display: none;
+  }
+
+  nav ul { 
+    list-style: none;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 369px;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: #1a2236;
+  }
+
+  nav ul a:hover {
+    text-decoration: underline;
+  }
 
   #headline {
     background-image: url("./images/image-geometry_1.png"), url(./images/image_dots.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: right, right 55.75% bottom;
+    background-position: right top, right 55.75% bottom;
     background-size: 48.75% auto, 12.15% auto;
-    padding: 192px 55.3% 210px 11.1%;
-    height: auto;
+    padding: 192px 55.3% 13.2% 11.1%;
     max-width: 1440px;
     margin: 0 auto 14.6% auto;
   }
