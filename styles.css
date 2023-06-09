@@ -157,7 +157,7 @@ a.see-project {
   line-height: 3.125rem;
 }
 
-#about-myself-section > p {
+#about-myself-section div > p {
   margin-bottom: 1.25rem;
   font-weight: 400;
   font-size: 0.875rem;
@@ -165,19 +165,18 @@ a.see-project {
 
 #about-myself-section button {
   border: none;
-  background-position: center right 2.75rem;
+  background-image: url(./images/ic_download.png);
+  background-repeat: no-repeat;
+  background-position: center right 31.38%;
+  background-size: 24px 24px;
   margin-bottom: 1.688rem;
   background-color: #1a2236;
   height: 3.125rem;
   font-weight: 500;
   font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-myself-section button img {
-  margin-left: 1.25rem;
+  display: block;
+  width: 100%;
+  padding: 0 42.41% 0 27.24%;
 }
 
 .knowledge {
