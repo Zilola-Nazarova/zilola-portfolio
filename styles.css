@@ -17,6 +17,10 @@ nav {
   justify-content: flex-end;
 }
 
+nav ul {
+  display: none;
+}
+
 nav .menu {
   margin-top: 1.188rem;
   margin-right: 0.875rem;
@@ -380,11 +384,11 @@ a.see-project:active,
     display: none;
   }
 
-  nav ul { 
+  nav ul {
+    display: flex;
     list-style: none;
     margin: auto;
     font-size: 16px;
-    display: flex;
     justify-content: space-between;
     width: 369px;
   }
