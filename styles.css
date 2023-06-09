@@ -61,6 +61,7 @@ button.collaboration {
   background-color: #1a2236;
   font-size: 1rem;
   font-weight: 500;
+  transition: all 2s ease-out;
 }
 
 .poppins {
@@ -300,6 +301,7 @@ a.see-project {
   margin-top: 1.25rem;
   font-weight: 500;
   font-size: 1rem;
+  transition: all 0.5s ease-out;
 }
 
 footer {
@@ -321,6 +323,7 @@ footer {
   font-size: 1rem;
   text-align: left;
   margin: 0 auto;
+  transition: all 0.5s ease-out;
 }
 
 #footer button:active {
