@@ -375,11 +375,49 @@ a.see-project:active,
     /* background-position: ; */
   }
 
+  /* .knowledge .skills:after {
+    content: url(./images/image_dots_with_teal.png);
+    grid-row: 2;
+    grid-column: 2;
+  } */
+
   #about-myself-section {
+    margin: 0;
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
-    background-position: bottom 150px left 516px;
+    background-position: bottom 150px left 39%;
+    padding: 216px 11% 158px 11%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 6.66%;
+    align-content: start;
   }
+
+  #about-myself-section .knowledge {
+    order: -1;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  #about-myself-section h2 {
+    font-size: 110px;
+    margin-top: 28px;
+    margin-bottom: 30px;
+  }
+
+  #about-myself-section p {
+    
+  }
+
+  #about-myself-section button {
+    font-size: 18px;
+    width: 254px;
+  }
+  
+
 
   #contact-form {
     max-width: 1440px;
