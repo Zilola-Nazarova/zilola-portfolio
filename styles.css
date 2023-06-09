@@ -206,8 +206,7 @@ a.see-project {
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 18rem;
-  padding-top: 3.125rem;
-  padding-left: 3.125rem;
+  padding: 3.125rem 3.125rem 1.125rem 3.125rem;
 }
 
 .knowledge div.languages {
@@ -413,7 +412,7 @@ a.see-project:active,
 
   #headline .text-block h1 {
     line-height: 1em;
-    font-size: 6.875vw;
+    font-size: 7.63vw;
     margin-bottom: 46px;
   }
 
@@ -493,38 +492,59 @@ a.see-project:active,
 
   #about-myself-section {
     margin: 0;
-    background-image: url("./images/image_dots_with_teal.png");
-    background-repeat: no-repeat;
-    background-position: bottom 150px left 39%;
     padding: 216px 11% 158px 11%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 6.66%;
-    align-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #about-myself-section > div {
+    width: 30.97%;
   }
 
   #about-myself-section .knowledge {
     order: -1;
-    grid-row: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0;
+    width: min(60%, 36rem);
+    height: min(60%, 36rem);
+    position: relative;
+    background-image: url("./images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 38.4%;
+    /* height: 50%; */
+  }
+
+  #about-myself-section .knowledge h3 {
+    font-size: 1.39vw;
+  }
+
+  #about-myself-section .knowledge span {
+    font-size: 1.25vw;
+  }
+
+  #about-myself-section .knowledge div {
+    padding: 17.3%;
+    padding-right: 5%;
+    height: unset;
   }
 
   #about-myself-section h2 {
-    font-size: 110px;
+    font-size: 7.63vw;
     margin-top: 28px;
+    margin-bottom: 30px;
+    line-height: 1em;
+  }
+
+  #about-myself-section div > p {
     margin-bottom: 30px;
   }
 
-  #about-myself-section p {
-    
-  }
-
   #about-myself-section button {
-    font-size: 18px;
-    width: 254px;
+    font-size: 1.25vw;
+    /* width: 254px; */
   }
 
   #contact-form {
