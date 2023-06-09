@@ -6,6 +6,7 @@
 
 body {
   min-width: 14.375rem;
+  margin: 0 auto;
 }
 
 nav {
@@ -381,9 +382,67 @@ a.see-project:active,
   }
 
   #contact-form {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 168px min(31%, 446px);
     background-image: url("./images/image-geometry_6.png"), url("./images/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+  }
+
+  #contact-form h2 {
+    font-size: 109px;
+    margin-bottom: 40px;
+    line-height: 110px;
+  }
+
+  #contact-form p {
+    margin-bottom: 40px;
+  }
+
+  #contact-form form {
+    display: grid;
+    column-gap: 35px;
+    grid-template-areas: 'yourname youremail'
+    'inputname inputemail'
+    'yourmessage yourmessage'
+    'textarea textarea'
+    'button button';
+  }
+
+  #contact-form input {
+    margin-bottom: 20px;
+  }
+  #contact-form #user-name {
+    grid-area: inputname;
+  }
+
+  #contact-form #user-email {
+    grid-area: inputemail;
+  }
+
+  #contact-form button {
+    grid-area: button;
+    margin: 40px auto 0 auto;
+    width: 254px;
+    height: 70px;
+    font-size: 18px;
+  }
+
+  #contact-form label:first-of-type {
+    grid-area: yourname;
+  }
+
+  #contact-form label:nth-of-type(2) {
+    grid-area: youremail;
+  }
+
+  #contact-form label:last-of-type {
+    grid-area: yourmessage;
+  }
+
+  #contact-form textarea {
+    grid-area: textarea;
   }
 
   #footer {
@@ -407,9 +466,21 @@ a.see-project:active,
   #footer button {
     margin: 0;
     font-size: 18px;
-    padding-right: 48px;
     width: fit-content;
     height: 27px;
+    background-image: url(./images/ic-link_teal.png);
   }
-  
+
+  footer span {
+    visibility: hidden;
+    position: relative;
+  }
+
+  footer span:after {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "Get my CV";
+  }
 }
