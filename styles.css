@@ -113,6 +113,10 @@ button.collaboration {
   width: 100%;
 }
 
+.work-card img[src*="big"] {
+  display: none;
+}
+
 .project-name {
   font-weight: 300;
   font-size: 1.25rem;
@@ -461,22 +465,19 @@ a.see-project:active,
     background-size: 33.3%;
   }
 
-  #work-section div.work-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  #work-section div[class*="dec-div"] {
+    display: block;
+    height: 100%;
   }
 
   #work-section div.work-card img {
-    min-width: 100%;
-    min-height: 100%
+    display: none;
   }
 
-  #work-section div[class*="dec-div"] {
+  #work-section div.work-card img[src*="big"] {
     display: block;
-    /* border: 1px sienna solid; */
-    height: min-content;
+    min-width: 100%;
+    min-height: 100%
   }
 
   #work-section div.dec-div-2 {
@@ -529,10 +530,26 @@ a.see-project:active,
 
   #work-section div.w5 {
     grid-area: 2 / 5 / 4 / 7;
+    position: relative;
+  }
+
+  #work-section div.w5 .work-info {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   #work-section div.w6 {
     grid-area: 1 / 3 / 2 / 7;
+    position: relative;
+  }
+
+  #work-section div.w6 .work-info {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
   }
 
   #about-myself-section {
@@ -702,8 +719,4 @@ a.see-project:active,
     top: 0;
     content: "Get my CV";
   }
-
 }
-
-
-  
