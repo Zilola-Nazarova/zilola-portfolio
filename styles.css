@@ -45,7 +45,7 @@ nav .menu {
 }
 
 #headline .headline-decoration {
-    display: none;
+  display: none;
 }
 
 h1.playfair {
@@ -407,7 +407,7 @@ a.see-project:active,
   }
 
   #headline {
-    background-image: unset;    
+    background-image: unset;
     padding: 0;
     max-width: 1440px;
     margin: 0 auto 14.6% auto;
@@ -435,9 +435,8 @@ a.see-project:active,
   }
 
   #headline img {
-    width: 100%;   
+    width: 100%;
   }
-
 
   #headline .text-block h1 {
     line-height: 1em;
