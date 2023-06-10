@@ -165,7 +165,7 @@ a.see-project {
   line-height: 3.125rem;
 }
 
-#about-myself-section div > p {
+#about-myself-section .about-me {
   margin-bottom: 1.25rem;
   font-weight: 400;
   font-size: 0.875rem;
@@ -426,7 +426,7 @@ a.see-project:active,
     margin-bottom: 46px;
   }
 
-  #headline .text-block button {
+  #headline button {
     font-size: 18px;
     margin-top: 52px;
     margin-bottom: 0;
@@ -618,7 +618,7 @@ a.see-project:active,
     font-size: 1.39vw;
   }
 
-  #about-myself-section .knowledge span {
+  #about-myself-section span {
     font-size: 1.25vw;
   }
 
