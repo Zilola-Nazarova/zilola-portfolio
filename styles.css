@@ -69,7 +69,7 @@ button.collaboration {
   background-color: #1a2236;
   font-size: 1rem;
   font-weight: 500;
-  transition: all 2s ease-out;
+  transition: all 0.3s ease;
 }
 
 .poppins {
@@ -310,7 +310,7 @@ a.see-project {
   margin-top: 1.25rem;
   font-weight: 500;
   font-size: 1rem;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -332,15 +332,11 @@ footer {
   font-size: 1rem;
   text-align: left;
   margin: 0 auto;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease;
 }
 
 #footer button:hover {
   cursor: pointer;
-  color: #fff;
-}
-
-#footer button:active {
   color: #fff;
   transform: scale(1.05);
 }
