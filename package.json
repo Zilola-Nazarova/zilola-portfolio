@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is my portfolio. I created it studying at Microverse.",
   "main": "index.js",
+  "type" : "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
