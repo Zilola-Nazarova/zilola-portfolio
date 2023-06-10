@@ -438,6 +438,7 @@ a.see-project:active,
   }
 
   #work-section  {
+    margin: 0 auto;
     max-width: 1440px;
     display: grid;
     grid-template-rows: 34.9% 3.9% 11.6% 4.9% 11.6% 16% 17.1%;
@@ -533,23 +534,60 @@ a.see-project:active,
     position: relative;
   }
 
-  #work-section div.w5 .work-info {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
   #work-section div.w6 {
     grid-area: 1 / 3 / 2 / 7;
     position: relative;
   }
 
+  #work-section div.w5 .work-info,
   #work-section div.w6 .work-info {
-    position: absolute;
     display: flex;
+    position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #1a2236f2;
+    justify-content: space-around;
+  }
+
+  #work-section div.w6 .work-info {    
+    height: 57.9%; 
+  }
+
+  #work-section div.w6 .project-name {
+    font-size: 4.1vw;
+    line-height: 1em;
+    font-weight: 700; 
+  }
+  
+  #work-section div.w5 .project-name {
+    font-size: 2.7vw;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  #work-section ul li {
+    line-height: unset;
+    font-size: 1.39vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  #work-section ul li:last-of-type {
+    margin-right: 0;
+  }
+
+  #work-section a.see-project {
+    background-image: url(./images/ic_arrow_right.png);
+    color:#1a2236;
+    font-size: max(1.25vw, 14px);
+    background-color: #fff;
+    width: 212px;
+    line-height: 1em;
+    padding: auto 53px auto 20px;
   }
 
   #about-myself-section {
