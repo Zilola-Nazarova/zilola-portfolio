@@ -379,7 +379,7 @@ a.see-project:active,
 @media only screen and (min-width: 768px) {
   nav {
     height: 100px;
-    box-shadow: 0px 0.5px 0px #DDDFE6;
+    box-shadow: 0 0.5px 0 #DDDFE6;
     background-image: none;
     justify-content: center;
   }
@@ -453,7 +453,7 @@ a.see-project:active,
   #work-section h2 {
     grid-area: 1 / 1 / 2 / 2;
     display: block;
-    writing-mode: vertical-lr; 
+    writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-size: 7.63vw;
     line-height: 1em;
@@ -549,14 +549,14 @@ a.see-project:active,
     justify-content: space-around;
   }
 
-  #work-section div.w6 .work-info {    
-    height: 57.9%; 
+  #work-section div.w6 .work-info { 
+    height: 57.9%;
   }
 
   #work-section div.w6 .project-name {
     font-size: 4.1vw;
     line-height: 1em;
-    font-weight: 700; 
+    font-weight: 700;
   }
   
   #work-section div.w5 .project-name {
@@ -646,7 +646,6 @@ a.see-project:active,
 
   #about-myself-section button {
     background-position: center right 21.6%;
-    background-size: ;
     font-size: 18px;
     padding: 0;
     padding-right: 48px;
@@ -678,10 +677,10 @@ a.see-project:active,
     display: grid;
     column-gap: 35px;
     grid-template-areas: 'yourname youremail'
-    'inputname inputemail'
-    'yourmessage yourmessage'
-    'textarea textarea'
-    'button button';
+                         'inputname inputemail'
+                         'yourmessage yourmessage'
+                         'textarea textarea'
+                         'button button';
   }
 
   #contact-form input {
