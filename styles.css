@@ -635,7 +635,7 @@ a.see-project:active,
     line-height: 1em;
   }
 
-  #about-myself-section div > p {
+  #about-myself-section .about-me {
     margin-bottom: 30px;
     text-align: justify;
   }
