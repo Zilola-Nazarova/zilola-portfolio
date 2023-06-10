@@ -248,7 +248,7 @@ a.see-project {
   margin-bottom: 1.25rem;
 }
 
-#contact-form p {
+#contact-form > p {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 0.875rem;
@@ -266,6 +266,10 @@ a.see-project {
   width: 100%;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
+  font-size: 0.875rem;
+  color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 #contact-form input {
@@ -277,14 +281,6 @@ a.see-project {
 #contact-form textarea {
   height: 7rem;
   padding: 0.875rem 1rem;
-}
-
-#contact-form input,
-#contact-form textarea {
-  font-size: 0.875rem;
-  color: #1a2236;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
 }
 
 #contact-form input::placeholder,
@@ -379,7 +375,7 @@ a.see-project:active,
 @media only screen and (min-width: 768px) {
   nav {
     height: 100px;
-    box-shadow: 0 0.5px 0 #DDDFE6;
+    box-shadow: 0 0.5px 0 #dddfe6;
     background-image: none;
     justify-content: center;
   }
@@ -437,14 +433,14 @@ a.see-project:active,
     width: 254px;
   }
 
-  #work-section  {
+  #work-section {
     margin: 0 auto;
     max-width: 1440px;
     display: grid;
     grid-template-rows: 34.9% 3.9% 11.6% 4.9% 11.6% 16% 17.1%;
     grid-template-columns: 32.3% 1% 22.2% 12.2% 20.1% 12.2%;
     gap: 0;
-  } 
+  }
 
   #work-section .work-info {
     display: none;
@@ -478,7 +474,7 @@ a.see-project:active,
   #work-section div.work-card img[src*="big"] {
     display: block;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
   }
 
   #work-section div.dec-div-2 {
@@ -490,7 +486,7 @@ a.see-project:active,
   }
 
   #work-section div.dec-div-2 img,
-  #work-section div.dec-div-3 img {   
+  #work-section div.dec-div-3 img {
     min-width: 100%;
   }
 
@@ -513,8 +509,8 @@ a.see-project:active,
     grid-area: 7 / 1 / 8 / 2;
   }
 
-  #work-section div.w1{
-    grid-area: 3 / 1 / 5 / 2;   
+  #work-section div.w1 {
+    grid-area: 3 / 1 / 5 / 2;
   }
 
   #work-section div.w2 {
@@ -549,7 +545,7 @@ a.see-project:active,
     justify-content: space-around;
   }
 
-  #work-section div.w6 .work-info { 
+  #work-section div.w6 .work-info {
     height: 57.9%;
   }
 
@@ -558,7 +554,7 @@ a.see-project:active,
     line-height: 1em;
     font-weight: 700;
   }
-  
+
   #work-section div.w5 .project-name {
     font-size: 2.7vw;
     line-height: 1.3em;
@@ -582,7 +578,7 @@ a.see-project:active,
 
   #work-section a.see-project {
     background-image: url(./images/ic_arrow_right.png);
-    color:#1a2236;
+    color: #1a2236;
     font-size: max(1.25vw, 14px);
     background-color: #fff;
     width: 212px;
@@ -641,10 +637,10 @@ a.see-project:active,
 
   #about-myself-section div > p {
     margin-bottom: 30px;
-    text-align:justify;
+    text-align: justify;
   }
 
-  #about-myself-section button {
+  #about-myself-section div button {
     background-position: center right 21.6%;
     font-size: 18px;
     padding: 0;
@@ -669,23 +665,25 @@ a.see-project:active,
     line-height: 110px;
   }
 
-  #contact-form p {
+  #contact-form > p {
     margin-bottom: 40px;
   }
 
   #contact-form form {
     display: grid;
     column-gap: 35px;
-    grid-template-areas: 'yourname youremail'
-                         'inputname inputemail'
-                         'yourmessage yourmessage'
-                         'textarea textarea'
-                         'button button';
+    grid-template-areas:
+      'yourname youremail'
+      'inputname inputemail'
+      'yourmessage yourmessage'
+      'textarea textarea'
+      'button button';
   }
 
   #contact-form input {
     margin-bottom: 20px;
   }
+
   #contact-form #user-name {
     grid-area: inputname;
   }
@@ -694,7 +692,7 @@ a.see-project:active,
     grid-area: inputemail;
   }
 
-  #contact-form button {
+  #contact-form form button {
     grid-area: button;
     margin: 40px auto 0 auto;
     width: 254px;
@@ -732,11 +730,11 @@ a.see-project:active,
     gap: 2rem;
   }
 
-  #footer ul li + li {
+  #footer ul.social-links li + li {
     margin: 0;
   }
 
-  #footer button {
+  #footer button.poppins {
     margin: 0;
     font-size: 18px;
     width: fit-content;
@@ -744,12 +742,12 @@ a.see-project:active,
     background-image: url(./images/ic-link_teal.png);
   }
 
-  footer span {
+  #footer span {
     visibility: hidden;
     position: relative;
   }
 
-  footer span:after {
+  footer span::after {
     visibility: visible;
     position: absolute;
     left: 0;
