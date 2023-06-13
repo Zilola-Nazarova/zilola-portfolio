@@ -603,7 +603,6 @@ a.see-project:active,
     font-size: min(1.25vw, 18px);
     background-color: #fff;
     width: fit-content;
-    /* width: 212px; */
     line-height: 1em;
     padding: 0.66em 53px 0.66em 20px;
   }
