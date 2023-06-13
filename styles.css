@@ -116,6 +116,8 @@ button.collaboration {
 .work-card img {
   display: block;
   width: 100%;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
 
 .work-card img[src*="big"] {
