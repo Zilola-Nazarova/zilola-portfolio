@@ -598,11 +598,12 @@ a.see-project:active,
   #work-section a.see-project {
     background-image: url(./images/ic_arrow_right.png);
     color: #1a2236;
-    font-size: max(1.25vw, 14px);
+    font-size: min(1.25vw, 18px);
     background-color: #fff;
-    width: 212px;
+    width: fit-content;
+    /* width: 212px; */
     line-height: 1em;
-    padding: auto 53px auto 20px;
+    padding: 0.66em 53px 0.66em 20px;
   }
 
   #about-myself-section {
