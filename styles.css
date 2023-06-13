@@ -425,6 +425,7 @@ a.see-project:active,
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 27.4% auto;
+    z-index: 1;
   }
 
   #headline .headline-decoration {
@@ -448,6 +449,7 @@ a.see-project:active,
     margin-top: 52px;
     margin-bottom: 0;
     width: 254px;
+    height: 70px;
   }
 
   #work-section {
