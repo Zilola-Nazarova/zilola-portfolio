@@ -623,12 +623,13 @@ a.see-project:active,
     grid-template-rows: 1fr 1fr;
     gap: 0;
     width: min(60%, 36rem);
-    height: 36rem;
+    min-height: 36rem;
     position: relative;
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 38.4%;
+    letter-spacing: -0.0525em;
   }
 
   #about-myself-section .knowledge h3 {
@@ -636,7 +637,7 @@ a.see-project:active,
   }
 
   #about-myself-section span {
-    font-size: 1.25vw;
+    font-size: min(18px, 1.25vw);
   }
 
   #about-myself-section .knowledge div {
