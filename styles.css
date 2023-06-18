@@ -116,8 +116,6 @@ button.collaboration {
 .work-card img {
   display: block;
   width: 100%;
-  margin-top: -2px;
-  margin-bottom: -2px;
 }
 
 .work-card img[src*="big"] {
@@ -214,7 +212,7 @@ a.see-project {
 
 .knowledge li span {
   position: relative;
-  left: -0.85rem;
+  left: -0.75rem;
 }
 
 .knowledge div {
@@ -427,7 +425,6 @@ a.see-project:active,
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 27.4% auto;
-    z-index: 1;
   }
 
   #headline .headline-decoration {
@@ -451,7 +448,6 @@ a.see-project:active,
     margin-top: 52px;
     margin-bottom: 0;
     width: 254px;
-    height: 70px;
   }
 
   #work-section {
@@ -600,11 +596,11 @@ a.see-project:active,
   #work-section a.see-project {
     background-image: url(./images/ic_arrow_right.png);
     color: #1a2236;
-    font-size: min(1.25vw, 18px);
+    font-size: max(1.25vw, 14px);
     background-color: #fff;
-    width: fit-content;
+    width: 212px;
     line-height: 1em;
-    padding: 0.66em 53px 0.66em 20px;
+    padding: auto 53px auto 20px;
   }
 
   #about-myself-section {
@@ -627,26 +623,25 @@ a.see-project:active,
     grid-template-rows: 1fr 1fr;
     gap: 0;
     width: min(60%, 36rem);
-    min-height: 36rem;
+    height: 36rem;
     position: relative;
     background-image: url("./images/image_dots_with_teal.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 38.4%;
-    letter-spacing: -0.0525em;
   }
 
   #about-myself-section .knowledge h3 {
-    font-size: 20px;
+    font-size: 1.39vw;
   }
 
   #about-myself-section span {
-    font-size: 18px;
+    font-size: 1.25vw;
   }
 
   #about-myself-section .knowledge div {
     padding: 17.3%;
-    padding-right: 3%;
+    padding-right: 5%;
     padding-bottom: 5%;
     height: unset;
   }
