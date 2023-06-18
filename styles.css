@@ -571,13 +571,13 @@ a.see-project:active,
   }
 
   #work-section div.w6 .project-name {
-    font-size: 4.1vw;
+    font-size: min(60px, 4.1vw);
     line-height: 1em;
     font-weight: 700;
   }
 
   #work-section div.w5 .project-name {
-    font-size: 2.7vw;
+    font-size: min(40px, 2.7vw);
     line-height: 1.3em;
     font-weight: 700;
     text-overflow: ellipsis;
