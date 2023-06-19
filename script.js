@@ -10,7 +10,6 @@ document.getElementById('close-btn').addEventListener('click',()=>{
 });
 
 const linkBtn = document.querySelectorAll('.menu-list a');
-console.groupCollapsed(linkBtn.length);
 for (let i = 0; i < linkBtn.length; i += 1) {
   linkBtn[i].addEventListener('click',()=>{
     const mobilePopup = document.querySelector('.mobile-menu');

@@ -32,12 +32,40 @@ nav .menu {
   top: 0;
   background-color: #7d7c84;
   width: 100vw;
-  height: 100vh;
+  height: 100vh ;
   border: #e2505c solid 1px;
 }
 
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu-list li {
+  font-family: 'Poppins';
+  font-style: normal; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  color: #000000;
+}
+
+.menu-list li a {
+  text-decoration: none;
+}
+
 .visible {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 #headline {
