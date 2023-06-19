@@ -30,10 +30,13 @@ nav .menu {
   display: none;
   position: absolute;
   top: 0;
-  background-color: #7d7c84;
+  background-color: #fff;
   width: 100vw;
   height: 100vh ;
-  border: #e2505c solid 1px;
+  background-image: url(./images/popup-corner.png), url(./images/popup-decoration-1.png), url(./images/popup-decoration-2.png), url(./images/popup-decoration-2.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left, bottom center, top 74px right 57px, bottom max(110px, 25%) left 54px;
+  background-size: 111px 74px, contain, 40px 40px, 40px 40px;
 }
 
 .menu-list {
@@ -45,15 +48,16 @@ nav .menu {
 
 .menu-list li {
   font-family: 'Poppins';
-  font-style: normal; 
-  font-weight: 400;
-  font-size: 16px;
   line-height: 300%;
-  color: #000000;
 }
 
 .menu-list li a {
   text-decoration: none;
+  color: #000000;
+}
+
+.menu-list li a:visited {
+  color: #1a2236;
 }
 
 .visible {
