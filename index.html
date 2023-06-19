@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="">
     <nav>
       <ul class="navigation poppins dark-blue">
         <li><a href="#">Home</a></li>
@@ -21,9 +21,19 @@
       </ul>
       <a class="menu" href="#"><img src="./images/ic_menu.png"></a>
     </nav>
+    <div class="mobile-menu">
+      <a><img id="close-btn" src="./images/popup-close.png"></a>
+      <ul class="menu-list poppins">
+        <li><a href="#headline">Hello</a></li>
+        <li><a href="#work-section">Portfolio</a></li>
+        <li><a href="#about-myself-section">About</A></a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </div>   
   </header>
+
   <main>
-    <section id="headline">
+    <section id="headline" class="">
       <div class="text-block">
         <h1 class="playfair dark-blue">Zilola Nazarova</h1>
         <p class="poppins dark-blue">Hello! I am a software developer! I can help you build a product, 
@@ -31,7 +41,7 @@
         <br><br>
         If you like what you see and have a project you need coded, 
         don’t hesitate to contact me.</p>
-        <button class="collaboration white poppins">
+        <button type="submit" class="collaboration white poppins">
           Start collaboration
         </button>        
       </div>
@@ -40,7 +50,7 @@
       </div>  
     </section>
 
-    <section id="work-section">
+    <section id="work-section" class="">
       <h2 class="playfair dark-blue">Projects</h2>
       <div class="dec-div-2"><img class="decoration" src="./images/image-geometry_2.png"></div>
       <div class="dec-div-3"><img class="decoration" src="./images/image-geometry_3.png"></div>
@@ -126,14 +136,14 @@
       </div>
     </section>
 
-    <section id="about-myself-section">
+    <section id="about-myself-section" class="">
       <div>
         <h2 class="dark-blue playfair">About</h2>
         <p class="about-me dark-blue poppins">I can help you build a product, feature or website 
           Look through some of my work and experience! If you 
           like what you see and have a project you need coded, 
           don’t hesitate to contact me.</p>
-        <button class="white poppins"><p>Get my CV</p></button>
+        <button type="submit" class="white poppins"><p>Get my CV</p></button>
       </div>
       <article class="knowledge poppins white">
         <div class="languages">
@@ -166,7 +176,7 @@
         </div>
       </article>   
     </section>
-    <section id="contact-form">
+    <section id="contact-form" class="">
       <h2 class="dark-blue playfair">Get started</h2>
       <p class="dark-blue poppins">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       <form action="https://formspree.io/f/xpzegyyg" method="POST">
@@ -180,8 +190,8 @@
       </form>
     </section>
   </main>
-  <footer id="footer">
-    <button class="poppins"><span>Get my Resume</span></button>
+  <footer id="footer" class="">
+    <button type="submit" class="poppins"><span>Get my Resume</span></button>
     <ul class="social-links">
       <li><a href="#"><img src="./images/ic_stackoverflow.png" alt="stackoverflow-icon"></a></li>
       <li><a href="#"><img src="./images/ic_github.png" alt="github-icon"></a></li>
@@ -191,5 +201,6 @@
       <li><a href="#"><img src="./images/ic_angellist.png" alt="angellist-icon"></a></li>
     </ul>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
