@@ -423,6 +423,15 @@ a.see-project:active,
   margin-left: 1.81rem;
 }
 
+#footer.unvisible,
+#about-myself-section.unvisible,
+#contact-form.unvisible,
+#work-section.unvisible,
+#headline.unvisible,
+header.unvisible {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   nav {
     height: 100px;
