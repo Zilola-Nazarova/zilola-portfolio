@@ -26,8 +26,8 @@ nav .menu {
   margin-right: 0.875rem;
 }
 
-#mobile-menu {
-  visibility: none;
+.mobile-menu {
+  display: none;
   position: absolute;
   top: 0;
   background-color: #7d7c84;
@@ -37,7 +37,7 @@ nav .menu {
 }
 
 .visible {
-  visibility: visible;
+  display: block;
 }
 
 #headline {
