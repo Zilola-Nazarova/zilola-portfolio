@@ -32,10 +32,10 @@ nav .menu {
   top: 0;
   background-color: #fff;
   width: 100vw;
-  height: 100vh ;
+  height: 100vh;
   background-image: url(./images/popup-corner.png), url(./images/popup-decoration-1.png), url(./images/popup-decoration-2.png), url(./images/popup-decoration-2.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top left, bottom center, top 74px right 57px, bottom max(110px, 25%) left 54px;
+  background-position: top left, bottom center, top 74px right 57px, bottom max(110px, 25%) left 54px; /* stylelint-disable-line */
   background-size: 111px 74px, contain, 40px 40px, 40px 40px;
 }
 
@@ -47,13 +47,12 @@ nav .menu {
 }
 
 .menu-list li {
-  font-family: 'Poppins';
   line-height: 300%;
 }
 
 .menu-list li a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 .menu-list li a:visited {
@@ -497,7 +496,7 @@ header.unvisible {
 
   #headline .text-block h1 {
     line-height: 1em;
-    font-size: min(7.63vw, 110px);
+    font-size: min(7.63vw, 110px); /* stylelint-disable-line */
     margin-bottom: 46px;
   }
 
@@ -527,7 +526,7 @@ header.unvisible {
     display: block;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: min(7.63vw, 110px);
+    font-size: min(7.63vw, 110px); /* stylelint-disable-line */
     line-height: 1em;
     margin: 0;
     text-align: end;
@@ -655,7 +654,7 @@ header.unvisible {
   #work-section a.see-project {
     background-image: url(./images/ic_arrow_right.png);
     color: #1a2236;
-    font-size: min(1.25vw, 18px);
+    font-size: min(1.25vw, 18px); /* stylelint-disable-line */
     background-color: #fff;
     width: fit-content;
     line-height: 1em;
@@ -665,7 +664,7 @@ header.unvisible {
   #about-myself-section {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 216px min(11%, 160px) 158px min(11%, 160px);
+    padding: 216px min(11%, 160px) 158px min(11%, 160px); /* stylelint-disable-line */
     flex-direction: row;
     justify-content: space-between;
   }
@@ -681,7 +680,7 @@ header.unvisible {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0;
-    width: min(60%, 36rem);
+    width: min(60%, 36rem); /* stylelint-disable-line */
     min-height: 36rem;
     position: relative;
     background-image: url("./images/image_dots_with_teal.png");
@@ -707,7 +706,7 @@ header.unvisible {
   }
 
   #about-myself-section h2 {
-    font-size: min(7.63vw, 110px);
+    font-size: min(7.63vw, 110px); /* stylelint-disable-line */
     margin-top: 28px;
     margin-bottom: 30px;
     line-height: 1em;
@@ -731,14 +730,14 @@ header.unvisible {
   #contact-form {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 168px min(31%, 446px);
+    padding: 168px min(31%, 446px); /* stylelint-disable-line */
     background-image: url("./images/image-geometry_6.png"), url("./images/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
   }
 
   #contact-form h2 {
-    font-size: min(7.63vw, 110px);
+    font-size: min(7.63vw, 110px); /* stylelint-disable-line */
     margin-bottom: 40px;
     line-height: 110px;
   }

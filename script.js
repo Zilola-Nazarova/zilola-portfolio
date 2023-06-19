@@ -8,7 +8,7 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-document.getElementById('close-btn').addEventListener('click',()=>{
+document.getElementById('close-btn').addEventListener('click', () => {
   const mobilePopup = document.querySelector('.mobile-menu');
   mobilePopup.classList.toggle('visible');
   const restOfThePage = document.querySelectorAll('section, footer');
@@ -19,13 +19,12 @@ document.getElementById('close-btn').addEventListener('click',()=>{
 
 const linkBtn = document.querySelectorAll('.menu-list a');
 for (let i = 0; i < linkBtn.length; i += 1) {
-  linkBtn[i].addEventListener('click',()=>{
+  linkBtn[i].addEventListener('click', () => {
     const mobilePopup = document.querySelector('.mobile-menu');
     mobilePopup.classList.toggle('visible');
     const restOfThePage = document.querySelectorAll('section, footer');
-  for (let i = 0; i < restOfThePage.length; i += 1) {
-    restOfThePage[i].classList.toggle('unvisible');
-  }
+    for (let i = 0; i < restOfThePage.length; i += 1) {
+      restOfThePage[i].classList.toggle('unvisible');
+    }
   });
-  
 }
