@@ -115,3 +115,14 @@ for (let i = 0; i < projectBtn.length; i += 1) {
   });
 }
 
+const closeProjectBtn = document.querySelectorAll('.project-details a img');
+for (let i = 0; i < closeProjectBtn.length; i += 1) {
+  closeProjectBtn[i].addEventListener('click', () => {
+    const projectPopup = document.getElementById(`project-${i}`);
+    projectPopup.classList.toggle('visible');
+    const restOfThePage = document.querySelectorAll('header, section, footer');
+    for (let i = 0; i < restOfThePage.length; i += 1) {
+      restOfThePage[i].classList.toggle('unvisible');
+    }
+  });
+}
