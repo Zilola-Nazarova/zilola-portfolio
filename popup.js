@@ -55,52 +55,52 @@ const projectDetails = [
   }
 ]
 
-const projects=document.querySelectorAll('.work-card');
-for(let i = 0;i < projects.length; i +=1) {
-  const card=document.createElement('div');
-  card.id=`project-${i}`;
+const projects = document.querySelectorAll('.work-card');
+for (let i = 0; i < projects.length; i += 1) {
+  const card = document.createElement('div');
+  card.id = `project-${i}`;
   card.classList.add("project-details");
 
-  const closeBtn=document.createElement('a');
-  closeBtn.innerHTML='<img src="./images/popup-close.png">';
+  const closeBtn = document.createElement('a');
+  closeBtn.innerHTML = '<img src="./images/popup-close.png">';
   card.appendChild(closeBtn);
 
-  const projectName=document.createElement('h2');
-  projectName.textContent=projectDetails[i].name;
+  const projectName = document.createElement('h2');
+  projectName.textContent = projectDetails[i].name;
   projectName.classList.add('poppins', 'dark-blue');
   card.appendChild(projectName);
 
-  const technologies=document.createElement('ul');
-  technologies.innerHTML=`<li>${projectDetails[i].technologies[0]}</li>
+  const technologies = document.createElement('ul');
+  technologies.innerHTML = `<li>${projectDetails[i].technologies[0]}</li>
   <li>${projectDetails[i].technologies[1]}</li>
   <li>${projectDetails[i].technologies[2]}</li>`
   technologies.classList.add('poppins', 'dark-blue');
   card.appendChild(technologies);
 
-  const projectImage=document.createElement('img');
-  projectImage.src=projectDetails[i].featured_image;
+  const projectImage = document.createElement('img');
+  projectImage.src = projectDetails[i].featured_image;
   // projectImage.classList.add('');
   card.appendChild(projectImage);
 
-  for(let j = 0;j < projectDetails[i]["description"].length;j +=1) {
-    const projectDecription=document.createElement('p');
-    projectDecription.textContent=projectDetails[i].description[j];
+  for (let j = 0; j < projectDetails[i]["description"].length; j += 1) {
+    const projectDecription = document.createElement('p');
+    projectDecription.textContent = projectDetails[i].description[j];
     projectDecription.classList.add('poppins', 'dark-blue');
     card.appendChild(projectDecription);
   }
 
-  const liveBtn=document.createElement('a');
-  liveBtn.textContent="See live";
-  liveBtn.href=projectDetails[i].link_version;
+  const liveBtn = document.createElement('a');
+  liveBtn.textContent = "See live";
+  liveBtn.href = projectDetails[i].link_version;
   liveBtn.classList.add('poppins', 'dark-blue');
   card.appendChild(liveBtn);
 
-  const sourceBtn=document.createElement('a');
-  sourceBtn.textContent="See source";
-  sourceBtn.href=projectDetails[i].link_source;
+  const sourceBtn = document.createElement('a');
+  sourceBtn.textContent = "See source";
+  sourceBtn.href = projectDetails[i].link_source;
   sourceBtn.classList.add('poppins', 'dark-blue');
   card.appendChild(sourceBtn);
-  console.log(card);
+  // console.log(card);
   document.body.appendChild(card);
 }
 
