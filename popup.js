@@ -67,37 +67,38 @@ for(let i = 0;i < projects.length; i +=1) {
 
   const projectName=document.createElement('h2');
   projectName.textContent=projectDetails[i].name;
-  projectName.classList.add("a");
+  projectName.classList.add('poppins', 'dark-blue');
   card.appendChild(projectName);
 
   const technologies=document.createElement('ul');
   technologies.innerHTML=`<li>${projectDetails[i].technologies[0]}</li>
   <li>${projectDetails[i].technologies[1]}</li>
   <li>${projectDetails[i].technologies[2]}</li>`
-  technologies.classList.add("a");
+  technologies.classList.add('poppins', 'dark-blue');
   card.appendChild(technologies);
 
   const projectImage=document.createElement('img');
   projectImage.src=projectDetails[i].featured_image;
-  projectImage.classList.add("a");
+  // projectImage.classList.add('');
   card.appendChild(projectImage);
 
   for(let j = 0;j < projectDetails[i]["description"].length;j +=1) {
     const projectDecription=document.createElement('p');
     projectDecription.textContent=projectDetails[i].description[j];
+    projectDecription.classList.add('poppins', 'dark-blue');
     card.appendChild(projectDecription);
   }
 
   const liveBtn=document.createElement('a');
   liveBtn.textContent="See live";
   liveBtn.href=projectDetails[i].link_version;
-  liveBtn.classList.add("a");
+  liveBtn.classList.add('poppins', 'dark-blue');
   card.appendChild(liveBtn);
 
   const sourceBtn=document.createElement('a');
   sourceBtn.textContent="See source";
   sourceBtn.href=projectDetails[i].link_source;
-  sourceBtn.classList.add("a");
+  sourceBtn.classList.add('poppins', 'dark-blue');
   card.appendChild(sourceBtn);
   console.log(card);
   document.body.appendChild(card);
