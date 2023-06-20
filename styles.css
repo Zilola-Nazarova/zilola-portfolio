@@ -5,7 +5,7 @@
 }
 
 body {
-  min-width: 14.375rem;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -57,12 +57,6 @@ nav .menu {
 
 .menu-list li a:visited {
   color: #1a2236;
-}
-
-.visible {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #close-btn {
@@ -175,12 +169,14 @@ button.collaboration {
   line-height: 1rem;
 }
 
-.category-list {
+.category-list,
+.project-details ul {
   margin-top: 1rem;
   display: flex;
 }
 
-.category-list li {
+.category-list li,
+.project-details li {
   display: inline-block;
   background-color: #98dede;
   margin-right: 0.625rem;
@@ -430,6 +426,71 @@ a.see-project:active,
 header.unvisible {
   display: none;
 }
+
+.visible,
+.project-details.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-details {
+  display: none;
+  width: 100vw;
+  min-width: 300px;
+  min-height: 100vh;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 18px 20px 15px;
+}
+
+.project-details .popup-close {
+  align-self: flex-end;
+}
+
+.project-details h2 {
+  font-size: 1.25rem;
+  line-height: 0.8em;
+  margin-top: 1.125rem;
+}
+
+.project-details p {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin-top: 1.875rem;
+}
+
+.project-details ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.125rem;
+}
+
+.project-details li {
+  background-color: #fff;
+  border: 0.5px solid #1a2236;
+}
+
+.project-details .popup-link {
+  margin: 29px auto 0 auto;
+  background-image: url(./images/details-popup/ic_link.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  font-size: 1.125rem;
+  line-height: 1.65em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 4%;
+  text-align: center;
+  border: 1px solid #1A2236;
+  width: 76%;
+  text-decoration: none;
+}
+
+.project-details .popup-link:last-of-type {
+  background-image: url(./images/details-popup/ic_link_github.svg);
+}
+
 
 @media only screen and (min-width: 768px) {
   nav {

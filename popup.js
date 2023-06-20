@@ -63,6 +63,7 @@ for (let i = 0; i < projects.length; i += 1) {
 
   const closeBtn = document.createElement('a');
   closeBtn.innerHTML = '<img src="./images/popup-close.png">';
+  closeBtn.classList.add('popup-close')
   card.appendChild(closeBtn);
 
   const projectName = document.createElement('h2');
@@ -92,13 +93,13 @@ for (let i = 0; i < projects.length; i += 1) {
   const liveBtn = document.createElement('a');
   liveBtn.textContent = "See live";
   liveBtn.href = projectDetails[i].link_version;
-  liveBtn.classList.add('poppins', 'dark-blue');
+  liveBtn.classList.add('poppins', 'dark-blue', 'popup-link');
   card.appendChild(liveBtn);
 
   const sourceBtn = document.createElement('a');
   sourceBtn.textContent = "See source";
   sourceBtn.href = projectDetails[i].link_source;
-  sourceBtn.classList.add('poppins', 'dark-blue');
+  sourceBtn.classList.add('poppins', 'dark-blue', 'popup-link');
   card.appendChild(sourceBtn);
   // console.log(card);
   document.body.appendChild(card);
