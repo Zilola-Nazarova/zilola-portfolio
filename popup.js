@@ -67,19 +67,19 @@ for(let i = 0;i < projects.length; i +=1) {
 
   const projectName=document.createElement('h2');
   projectName.textContent=projectDetails[i].name;
-  projectName.classList.add("");
+  projectName.classList.add("a");
   card.appendChild(projectName);
 
   const technologies=document.createElement('ul');
   technologies.innerHTML=`<li>${projectDetails[i].technologies[0]}</li>
   <li>${projectDetails[i].technologies[1]}</li>
   <li>${projectDetails[i].technologies[2]}</li>`
-  technologies.classList.add("");
+  technologies.classList.add("a");
   card.appendChild(technologies);
 
   const projectImage=document.createElement('img');
   projectImage.src=projectDetails[i].featured_image;
-  projectImage.classList.add("");
+  projectImage.classList.add("a");
   card.appendChild(projectImage);
 
   for(let j = 0;j < projectDetails[i]["description"].length;j +=1) {
@@ -91,14 +91,27 @@ for(let i = 0;i < projects.length; i +=1) {
   const liveBtn=document.createElement('a');
   liveBtn.textContent="See live";
   liveBtn.href=projectDetails[i].link_version;
-  liveBtn.classList.add("");
+  liveBtn.classList.add("a");
   card.appendChild(liveBtn);
 
   const sourceBtn=document.createElement('a');
   sourceBtn.textContent="See source";
   sourceBtn.href=projectDetails[i].link_source;
-  sourceBtn.classList.add("");
+  sourceBtn.classList.add("a");
   card.appendChild(sourceBtn);
-  
+  console.log(card);
   document.body.appendChild(card);
 }
+
+const projectBtn = document.querySelectorAll('.see-project');
+for (let i = 0; i < projectBtn.length; i += 1) {
+  projectBtn[i].addEventListener('click', () => {
+    const projectPopup = document.getElementById(`project-${i}`);
+    projectPopup.classList.toggle('visible');
+    const restOfThePage = document.querySelectorAll('header, footer, section');
+    for (let i = 0; i < restOfThePage.length; i += 1) {
+      restOfThePage[i].classList.toggle('unvisible');
+    }
+  });
+}
+
