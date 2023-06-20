@@ -83,7 +83,18 @@ for(let i = 0;i < projects.length; i +=1) {
     projectDecription.textContent=projectDetails[i].description[j];
     card.appendChild(projectDecription);
   }
-  
- 
 
+  const liveBtn=document.createElement('a');
+  liveBtn.textContent="See live";
+  liveBtn.href=projectDetails[i].link_version;
+  liveBtn.classList.add("");
+  card.appendChild(liveBtn);
+
+  const sourceBtn=document.createElement('a');
+  sourceBtn.textContent="See source";
+  sourceBtn.href=projectDetails[i].link_source;
+  sourceBtn.classList.add("");
+  card.appendChild(sourceBtn);
+  
+  document.body.appendChild(card);
 }
