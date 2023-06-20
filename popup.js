@@ -61,6 +61,10 @@ for(let i = 0;i < projects.length; i +=1) {
   card.id=`project-${i}`;
   card.classList.add("project-details");
 
+  const closeBtn=document.createElement('a');
+  closeBtn.innerHTML='<img src="./images/popup-close.png">';
+  card.appendChild(closeBtn);
+
   const projectName=document.createElement('h2');
   projectName.textContent=projectDetails[i].name;
   projectName.classList.add("");
