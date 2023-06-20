@@ -54,3 +54,15 @@ const projectDetails = [
     "link_source": "https://github.com/Zilola-Nazarova/zilola-portfolio"
   }
 ]
+
+const projects=document.querySelectorAll('.work-card');
+for(let i = 0;i < projects.length; i +=1) {
+  const card=document.createElement('div');
+  card.id=`project-${i}`;
+  card.classList.add("project-details");
+
+  const projectName=document.createElement('h2');
+  projectName.textContent=projectDetails[i].name;
+  projectName.classList.add("");
+  card.appendChild(projectName);
+}
