@@ -65,4 +65,25 @@ for(let i = 0;i < projects.length; i +=1) {
   projectName.textContent=projectDetails[i].name;
   projectName.classList.add("");
   card.appendChild(projectName);
+
+  const technologies=document.createElement('ul');
+  technologies.innerHTML=`<li>${projectDetails[i].technologies[0]}</li>
+  <li>${projectDetails[i].technologies[1]}</li>
+  <li>${projectDetails[i].technologies[2]}</li>`
+  technologies.classList.add("");
+  card.appendChild(technologies);
+
+  const projectImage=document.createElement('img');
+  projectImage.src=projectDetails[i].featured_image;
+  projectImage.classList.add("");
+  card.appendChild(projectImage);
+
+  for(let j = 0;j < projectDetails[i]["description"].length;j +=1) {
+    const projectDecription=document.createElement('p');
+    projectDecription.textContent=projectDetails[i].description[j];
+    card.appendChild(projectDecription);
+  }
+  
+ 
+
 }
