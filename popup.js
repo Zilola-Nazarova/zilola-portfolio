@@ -101,7 +101,19 @@ for (let i = 0; i < projects.length; i += 1) {
   sourceBtn.href = projectDetails[i].link_source;
   sourceBtn.classList.add('poppins', 'dark-blue', 'popup-link');
   card.appendChild(sourceBtn);
-  // console.log(card);
+
+  const previousProject = document.createElement('a');
+  previousProject.textContent = "Previous project";
+  // previousProject.href = projectDetails[i].link_source;
+  previousProject.classList.add('poppins', 'dark-blue', 'navigate-project');
+  card.appendChild(previousProject);
+
+  const nextProject = document.createElement('a');
+  nextProject.textContent = "Next project";
+  // nextProject.href = projectDetails[i].link_source;
+  nextProject.classList.add('poppins', 'dark-blue', 'navigate-project');
+  card.appendChild(nextProject);
+
   document.body.appendChild(card);
 }
 

@@ -496,6 +496,9 @@ header.unvisible {
   background-image: url(./images/details-popup/ic_link_github.svg);
 }
 
+.project-details .navigate-project {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   nav {
@@ -948,11 +951,14 @@ header.unvisible {
   .project-details .popup-link {
     width: 21%;
     margin: 40px 30px 40px 20%;
-
   }
   
-  .project-details .popup-link:last-of-type {
+  .project-details .popup-link:nth-of-type(3) {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  .project-details .navigate-project {
+    display: unset;
   }
 }
