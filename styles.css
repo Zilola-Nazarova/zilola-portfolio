@@ -459,6 +459,11 @@ header.unvisible {
   margin-top: 1.125rem;
 }
 
+.project-details .project-div {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-details p {
   font-size: 1.125rem;
   line-height: 1.5em;
@@ -969,6 +974,8 @@ header.unvisible {
   .project-details .navigate-project {
     display: unset;
   }
+
+
 
   #send-message small {
     grid-area: erroremail;

@@ -83,36 +83,40 @@ for (let i = 0; i < projects.length; i += 1) {
   // projectImage.classList.add('');
   card.appendChild(projectImage);
 
+  const projectDiv = document.createElement('div');
+  projectDiv.classList.add('project-div');
+  card.appendChild(projectDiv);
+
   for (let j = 0; j < projectDetails[i].description.length; j += 1) {
     const projectDecription = document.createElement('p');
     projectDecription.textContent = projectDetails[i].description[j];
     projectDecription.classList.add('poppins', 'dark-blue');
-    card.appendChild(projectDecription);
+    projectDiv.appendChild(projectDecription);
   }
 
   const liveBtn = document.createElement('a');
   liveBtn.textContent = 'See live';
   liveBtn.href = projectDetails[i].link_version;
   liveBtn.classList.add('poppins', 'dark-blue', 'popup-link');
-  card.appendChild(liveBtn);
+  projectDiv.appendChild(liveBtn);
 
   const sourceBtn = document.createElement('a');
   sourceBtn.textContent = 'See source';
   sourceBtn.href = projectDetails[i].link_source;
   sourceBtn.classList.add('poppins', 'dark-blue', 'popup-link');
-  card.appendChild(sourceBtn);
+  projectDiv.appendChild(sourceBtn);
 
   const previousProject = document.createElement('a');
   previousProject.textContent = 'Previous project';
   // previousProject.href = projectDetails[i].link_source;
   previousProject.classList.add('poppins', 'dark-blue', 'navigate-project');
-  card.appendChild(previousProject);
+  projectDiv.appendChild(previousProject);
 
   const nextProject = document.createElement('a');
   nextProject.textContent = 'Next project';
   // nextProject.href = projectDetails[i].link_source;
   nextProject.classList.add('poppins', 'dark-blue', 'navigate-project');
-  card.appendChild(nextProject);
+  projectDiv.appendChild(nextProject);
 
   document.body.appendChild(card);
 }
