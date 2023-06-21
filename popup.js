@@ -189,14 +189,14 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
   navigateNext[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
-    const nextProject = document.getElementById(`project-${i+1}`);
+    const nextProject = document.getElementById(`project-${(i+1) % 6}`);
     nextProject.classList.toggle('visible');
   });
 
   navigatePrevious[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
-    const previousProject = document.getElementById(`project-${i-1}`);
+    const previousProject = document.getElementById(`project-${(i-1) % 6}`);
     previousProject.classList.toggle('visible');
   });
 };
