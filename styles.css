@@ -501,9 +501,20 @@ header.unvisible {
   text-decoration: none;
 }
 
-.project-details .popup-link:last-of-type {
+.project-details .popup-link:nth-of-type(2) {
   background-image: url(./images/details-popup/ic_link_github.svg);
 }
+
+.project-details .popup-link:hover {
+  background-image: url(./images/details-popup/ic_link.svg);
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.project-details .popup-link:nth-of-type(2):hover {
+  background-image: url(./images/details-popup/ic_github_white.svg);
+}
+
 
 .project-details .navigate-project {
   display: none;
@@ -927,20 +938,32 @@ header.unvisible {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     border: 70px solid rgba(26, 34, 54, 0.95);
-    padding: 60px;
+    padding: 60px 60px 110px 60px;
+    position: relative;
+  }
+
+  .project-details .popup-close {
+    position: absolute;
+    right: 60px;
+    top: 72px;
   }
 
   .popup-close img {
     height: 32px;
     width: 32px;
   }
-
+  
   .project-details > img {
     width: 100%;
+    max-width: 1700px;
+    margin: 0 auto 0 auto;
   }
 
   .project-details h2 {
+    margin-top: 0;
+    margin-right: 40px;
     font-size: 3.75rem;
     order: -1;
   }
@@ -961,8 +984,11 @@ header.unvisible {
   }
 
   .project-details .project-div {
+    background-image: url(./images/details-popup/ic_arrow_left.svg), url(./images/details-popup/ic_arrow_right.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
     max-width: 700px;
-    margin: 70px auto 110px auto;
+    margin: 70px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -981,7 +1007,7 @@ header.unvisible {
 
   .project-details .popup-link {
     width: 35%;
-    margin: 40px 30px 40px 0;
+    margin: 40px 30px 120px 0;
   }
 
   .project-details .popup-link:nth-of-type(2) {
@@ -992,15 +1018,15 @@ header.unvisible {
     display: block;
     position: absolute;
     bottom: 0;
+    left: 40px;
     font-size: 18px;
     line-height: 1.5em;
   }
 
   .project-details .navigate-project:last-of-type {
-    right: 0;
+    left: unset;
+    right: 40px;
   }
-
-
 
   #send-message small {
     grid-area: erroremail;
