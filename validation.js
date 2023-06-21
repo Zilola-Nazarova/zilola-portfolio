@@ -1,6 +1,8 @@
 function showMessage(input, message, type) {
 	const msg = input.parentNode.querySelector("small");
-	msg.innerText = message;
+	const suggestEmail=' Replace with it '+form.elements['user_email'].value.toLowerCase();
+	console.log(suggestEmail);
+	msg.innerText = message + suggestEmail;
 	input.className = type ? "success" : "error";
 	return type;
 }
@@ -24,7 +26,7 @@ function validateEmail(input, invalidMsg) {
 
 const form = document.querySelector("#send-message");
 
-const EMAIL_LOWERCASE = "Please enter a your email in lower case";
+const EMAIL_LOWERCASE = "Please enter a your email in lower case.";
 
 form.addEventListener("submit", function (event) {
 	// stop form submission
