@@ -327,7 +327,7 @@ a.see-project {
 }
 
 #contact-form input {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0;
   height: 3.25rem;
   padding: 1.44rem 1rem 0.31rem 1rem;
 }
@@ -436,7 +436,6 @@ header.unvisible {
 .visible,
 .project-details.visible {
   display: flex;
-  
 }
 
 .project-details {
@@ -454,24 +453,24 @@ header.unvisible {
   align-self: flex-end;
 }
 
-.project-details h2 {
+#work-section .project-details h2 {
   font-size: 1.25rem;
   line-height: 0.8em;
   margin-top: 1.125rem;
 }
 
-.project-details p {
+#work-section .project-details p {
   font-size: 1.125rem;
   line-height: 1.5em;
   margin-top: 1.875rem;
 }
 
-.project-details ul {
+#work-section .project-details ul {
   margin-top: 1.5rem;
   margin-bottom: 1.125rem;
 }
 
-.project-details li {
+#work-section .project-details li {
   background-color: #fff;
   border: 0.5px solid #1a2236;
 }
@@ -487,7 +486,7 @@ header.unvisible {
   padding-bottom: 12px;
   padding-right: 4%;
   text-align: center;
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   width: 76%;
   text-decoration: none;
 }
@@ -498,6 +497,18 @@ header.unvisible {
 
 .project-details .navigate-project {
   display: none;
+}
+
+#contact-form input.error {
+  border: #e45865 1px solid;
+}
+
+#send-message small {
+  color: #e45865;
+  font-size: 10px;
+  display: block;
+  min-height: 10px;
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -821,13 +832,14 @@ header.unvisible {
     grid-template-areas:
       'yourname youremail'
       'inputname inputemail'
+      'errorname erroremail'
       'yourmessage yourmessage'
       'textarea textarea'
       'button button';
   }
 
   #contact-form input {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   #contact-form #user-name {
@@ -876,7 +888,7 @@ header.unvisible {
     gap: 2rem;
   }
 
-  #footer ul.social-links li + li {
+  #footer .social-links li + li {
     margin: 0;
   }
 
@@ -908,51 +920,47 @@ header.unvisible {
     border: 70px solid rgba(26, 34, 54, 0.95);
     padding: 60px;
   }
-  
-  .project-details .popup-close {
 
-  }
-  
-  .project-details > img {
+  #work-section div.project-details > img {
     width: 100%;
   }
 
-  .project-details h2 {
+  #work-section .project-details h2 {
     font-size: 3.75rem;
     width: 100%;
   }
-  
-  .project-details p {
+
+  #work-section .project-details p {
     width: 100%;
     padding-right: 20%;
     padding-left: 20%;
     margin: 1.875rem auto 0 auto;
   }
-  
-  .project-details p:first-of-type {
+
+  #work-section .project-details p:first-of-type {
     margin-top: 70px;
   }
 
-  .project-details ul {
+  #work-section .project-details ul {
     width: 100%;
     margin-top: 34px;
     margin-bottom: 40px;
   }
 
-  .project-details li {
+  #work-section div.project-details li {
     padding: 12px 20px;
     font-size: 20px;
   }
 
-  .project-details li:not(:last-of-type) {
+  #work-section .project-details li:not(:last-of-type) {
     margin-right: 20px;
   }
-  
+
   .project-details .popup-link {
     width: 21%;
     margin: 40px 30px 40px 20%;
   }
-  
+
   .project-details .popup-link:nth-of-type(3) {
     margin-right: 0;
     margin-left: 0;
@@ -960,5 +968,13 @@ header.unvisible {
 
   .project-details .navigate-project {
     display: unset;
+  }
+
+  #send-message small {
+    grid-area: erroremail;
+    color: #e45865;
+    display: block;
+    height: 35px;
+    margin-bottom: 0;
   }
 }
