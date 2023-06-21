@@ -931,8 +931,9 @@ header.unvisible {
     padding: 60px;
   }
 
-  .project-details .popup-close {
-
+  .popup-close img {
+    height: 32px;
+    width: 32px;
   }
 
   .project-details > img {
@@ -941,19 +942,7 @@ header.unvisible {
 
   .project-details h2 {
     font-size: 3.75rem;
-    /* width: calc(100%; */
     order: -1;
-  }
-
-  .project-details p {
-    width: 100%;
-    padding-right: 20%;
-    padding-left: 20%;
-    margin: 1.875rem auto 0 auto;
-  }
-
-  .project-details p:first-of-type {
-    margin-top: 70px;
   }
 
   .project-details ul {
@@ -971,18 +960,44 @@ header.unvisible {
     margin-right: 20px;
   }
 
-  .project-details .popup-link {
-    width: 21%;
-    margin: 40px 30px 40px 20%;
+  .project-details .project-div {
+    max-width: 700px;
+    margin: 70px auto 110px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
   }
 
-  .project-details .popup-link:nth-of-type(3) {
+  .project-div p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-details p:last-of-type {
+    margin-top: 1.5em;
+  }
+
+  .project-details .popup-link {
+    width: 35%;
+    margin: 40px 30px 40px 0;
+  }
+
+  .project-details .popup-link:nth-of-type(2) {
     margin-right: 0;
-    margin-left: 0;
   }
 
   .project-details .navigate-project {
-    display: unset;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  .project-details .navigate-project:last-of-type {
+    right: 0;
   }
 
 
