@@ -453,24 +453,24 @@ header.unvisible {
   align-self: flex-end;
 }
 
-#work-section .project-details h2 {
+.project-details h2 {
   font-size: 1.25rem;
   line-height: 0.8em;
   margin-top: 1.125rem;
 }
 
-#work-section .project-details p {
+.project-details p {
   font-size: 1.125rem;
   line-height: 1.5em;
   margin-top: 1.875rem;
 }
 
-#work-section .project-details ul {
+.project-details ul {
   margin-top: 1.5rem;
   margin-bottom: 1.125rem;
 }
 
-#work-section .project-details li {
+.project-details li {
   background-color: #fff;
   border: 0.5px solid #1a2236;
 }
@@ -921,38 +921,38 @@ header.unvisible {
     padding: 60px;
   }
 
-  #work-section div.project-details > img {
+  .project-details > img {
     width: 100%;
   }
 
-  #work-section .project-details h2 {
+  .project-details h2 {
     font-size: 3.75rem;
     width: 100%;
   }
 
-  #work-section .project-details p {
+  .project-details p {
     width: 100%;
     padding-right: 20%;
     padding-left: 20%;
     margin: 1.875rem auto 0 auto;
   }
 
-  #work-section .project-details p:first-of-type {
+  .project-details p:first-of-type {
     margin-top: 70px;
   }
 
-  #work-section .project-details ul {
+  .project-details ul {
     width: 100%;
     margin-top: 34px;
     margin-bottom: 40px;
   }
 
-  #work-section div.project-details li {
+  .project-details li {
     padding: 12px 20px;
     font-size: 20px;
   }
 
-  #work-section .project-details li:not(:last-of-type) {
+  .project-details li:not(:last-of-type) {
     margin-right: 20px;
   }
 
