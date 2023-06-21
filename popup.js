@@ -115,7 +115,7 @@ for (let i = 0; i < projectDetails.length; i += 1) {
   const imageBox = document.createElement('div');
   imageBox.classList.add('image-box');
   const featuredImage = document.createElement('img');
-  featuredImage.src = projectDetails[i].alternative_images[0];
+  featuredImage.src = projectDetails[i].alternative_images[0]; // eslint-disable-line
   featuredImage.classList.add('featured');
   imageBox.appendChild(featuredImage);
   for (let j = 0; j < projectDetails[i].alternative_images.length; j += 1) {
