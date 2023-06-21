@@ -507,7 +507,7 @@ header.unvisible {
   color: #e45865;
   font-size: 10px;
   display: block;
-  height: 10px;
+  min-height: 10px;
   margin-bottom: 8px;
 }
 
