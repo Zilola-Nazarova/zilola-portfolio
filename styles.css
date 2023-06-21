@@ -453,6 +453,11 @@ header.unvisible {
   align-self: flex-end;
 }
 
+.popup-close img {
+  height: 20px;
+  width: 20px;
+}
+
 .project-details h2 {
   font-size: 1.25rem;
   line-height: 0.8em;
@@ -921,9 +926,13 @@ header.unvisible {
   .project-details {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     border: 70px solid rgba(26, 34, 54, 0.95);
     padding: 60px;
+  }
+
+  .project-details .popup-close {
+
   }
 
   .project-details > img {
@@ -932,7 +941,8 @@ header.unvisible {
 
   .project-details h2 {
     font-size: 3.75rem;
-    width: 100%;
+    /* width: calc(100%; */
+    order: -1;
   }
 
   .project-details p {

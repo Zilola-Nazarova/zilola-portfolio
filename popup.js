@@ -62,7 +62,7 @@ for (let i = 0; i < projects.length; i += 1) {
   card.classList.add('project-details');
 
   const closeBtn = document.createElement('a');
-  closeBtn.innerHTML = '<img src="./images/popup-close.png">';
+  closeBtn.innerHTML = '<img src="./images/details-popup/ic_cross.svg">';
   closeBtn.classList.add('popup-close');
   card.appendChild(closeBtn);
 
