@@ -11,7 +11,6 @@ function showMessage(input, message, type) {
 function showError(input, message) {
   return showMessage(input, message, false);
 }
-
 // function showSuccess(input) {
 //   return showMessage(input, '', true);
 // }
