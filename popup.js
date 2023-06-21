@@ -58,7 +58,7 @@ const projectDetails = [
 for (let i = 0; i < projectDetails.length; i += 1) {
   const workSection = document.getElementById('work-section');
   const card = document.createElement('div');
-  card.classList.add('work-card', `w${i+1}`);
+  card.classList.add('work-card', `w${i + 1}`);
 
   const projectPreview = document.createElement('img');
   projectPreview.src = projectDetails[i].featured_image;
@@ -125,12 +125,12 @@ for (let i = 0; i < projectDetails.length; i += 1) {
   }
   const nextImage = document.createElement('a');
   nextImage.innerHTML = '<img src="./images/details-popup/Vector_5.svg">';
-  nextImage.href = "#";
+  nextImage.href = '#';
   nextImage.classList.add('next-image');
   imageBox.appendChild(nextImage);
   const previousImage = document.createElement('a');
   previousImage.innerHTML = '<img src="./images/details-popup/Vector_4.svg">';
-  previousImage.href = "#";
+  previousImage.href = '#';
   previousImage.classList.add('previous-image');
   imageBox.appendChild(previousImage);
   popupCard.appendChild(imageBox);
@@ -160,24 +160,20 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 
   const previousProject = document.createElement('a');
   previousProject.textContent = 'Previous project';
-  previousProject.href = "#";
+  previousProject.href = '#';
   previousProject.classList.add('poppins', 'dark-blue', 'navigate-project', 'previous');
   projectDiv.appendChild(previousProject);
 
   const nextProject = document.createElement('a');
   nextProject.textContent = 'Next project';
-  nextProject.href = "#";
+  nextProject.href = '#';
   nextProject.classList.add('poppins', 'dark-blue', 'navigate-project', 'next');
   projectDiv.appendChild(nextProject);
 
   document.body.appendChild(popupCard);
 }
 
-
-
-
 const projectBtn = document.querySelectorAll('.see-project');
-
 for (let i = 0; i < projectBtn.length; i += 1) {
   projectBtn[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
@@ -189,7 +185,7 @@ for (let i = 0; i < projectBtn.length; i += 1) {
   });
 }
 
-const closeProjectBtn = document.querySelectorAll('.project-details a img');
+const closeProjectBtn = document.querySelectorAll('.project-details .popup-close');
 for (let i = 0; i < closeProjectBtn.length; i += 1) {
   closeProjectBtn[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
@@ -200,22 +196,24 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
     }
   });
 }
+
 const navigateNext = document.querySelectorAll('.next');
 const navigatePrevious = document.querySelectorAll('.previous');
 console.log(navigateNext);
 for (let i = 0; i < closeProjectBtn.length; i += 1) {
+  console.log(closeProjectBtn.length);
   console.log(navigateNext[i]);
   navigateNext[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
-    const nextProject = document.getElementById(`project-${(i+1) % 6}`);
+    const nextProject = document.getElementById(`project-${(i + 1) % 6}`);
     nextProject.classList.toggle('visible');
   });
 
   navigatePrevious[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
-    const previousProject = document.getElementById(`project-${(i-1) % 6}`);
+    const previousProject = document.getElementById(`project-${(i - 1) % 6}`);
     previousProject.classList.toggle('visible');
   });
-};
+}
