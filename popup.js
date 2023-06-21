@@ -143,14 +143,14 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 
   const previousProject = document.createElement('a');
   previousProject.textContent = 'Previous project';
-  // previousProject.href = projectDetails[i].link_source;
-  previousProject.classList.add('poppins', 'dark-blue', 'navigate-project');
+  previousProject.href = "#";
+  previousProject.classList.add('poppins', 'dark-blue', 'navigate-project', 'previous');
   projectDiv.appendChild(previousProject);
 
   const nextProject = document.createElement('a');
   nextProject.textContent = 'Next project';
-  // nextProject.href = projectDetails[i].link_source;
-  nextProject.classList.add('poppins', 'dark-blue', 'navigate-project');
+  nextProject.href = "#";
+  nextProject.classList.add('poppins', 'dark-blue', 'navigate-project', 'next');
   projectDiv.appendChild(nextProject);
 
   document.body.appendChild(popupCard);
@@ -183,3 +183,20 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
     }
   });
 }
+const navigateNext = document.querySelectorAll('.next');
+const navigatePrevious = document.querySelectorAll('.previous');
+for (let i = 0; i < closeProjectBtn.length; i += 1) {
+  navigateNext[i].addEventListener('click', () => {
+    const projectPopup = document.getElementById(`project-${i}`);
+    projectPopup.classList.toggle('visible');
+    const nextProject = document.getElementById(`project-${i+1}`);
+    nextProject.classList.toggle('visible');
+  });
+
+  navigatePrevious[i].addEventListener('click', () => {
+    const projectPopup = document.getElementById(`project-${i}`);
+    projectPopup.classList.toggle('visible');
+    const previousProject = document.getElementById(`project-${i-1}`);
+    previousProject.classList.toggle('visible');
+  });
+};

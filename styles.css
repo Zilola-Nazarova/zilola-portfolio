@@ -977,6 +977,7 @@ header.unvisible {
   .project-details li {
     padding: 12px 20px;
     font-size: 20px;
+    border: 1px solid #1a2236;
   }
 
   .project-details li:not(:last-of-type) {
