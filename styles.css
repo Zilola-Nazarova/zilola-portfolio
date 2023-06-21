@@ -327,7 +327,7 @@ a.see-project {
 }
 
 #contact-form input {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0rem;
   height: 3.25rem;
   padding: 1.44rem 1rem 0.31rem 1rem;
 }
@@ -500,12 +500,16 @@ header.unvisible {
   display: none;
 }
 
-form .success {
-
+#contact-form input.error {
+  border: #e45865 1px solid;
 }
 
-form .error {
-  
+#send-message small {
+  color: #e45865;
+  font-size: 10px;
+  display: block;
+  height: 10px;
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -829,13 +833,14 @@ form .error {
     grid-template-areas:
       'yourname youremail'
       'inputname inputemail'
+      'errorname erroremail'
       'yourmessage yourmessage'
       'textarea textarea'
       'button button';
   }
 
   #contact-form input {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   #contact-form #user-name {
@@ -968,5 +973,13 @@ form .error {
 
   .project-details .navigate-project {
     display: unset;
+  }
+
+  #send-message small {
+    grid-area: erroremail;
+    color: #e45865;
+    display: block;
+    height: 35px;
+    margin-bottom: 0;
   }
 }
