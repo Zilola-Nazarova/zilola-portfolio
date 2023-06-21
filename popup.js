@@ -85,7 +85,6 @@ for (let i = 0; i < projectDetails.length; i += 1) {
   seeProject.href = '#';
   seeProject.classList.add('see-project', 'white', 'poppins');
   workInfo.appendChild(seeProject);
-  
 
   card.appendChild(workInfo);
   workSection.appendChild(card);
@@ -113,7 +112,6 @@ for (let i = 0; i < projectDetails.length; i += 1) {
   technologies.classList.add('poppins', 'dark-blue');
   popupCard.appendChild(technologies);
 
-
   const imageBox = document.createElement('div');
   imageBox.classList.add('image-box');
   const projectImage = document.createElement('img');
@@ -125,11 +123,17 @@ for (let i = 0; i < projectDetails.length; i += 1) {
     smallImage.classList.add('small-image');
     imageBox.appendChild(smallImage);
   }
-  // projectImage.classList.add('');
-  
+  const nextImage = document.createElement('a');
+  nextImage.innerHTML = '<img src="./images/details-popup/Vector_5.svg">';
+  nextImage.href = "#";
+  nextImage.classList.add('next-image');
+  imageBox.appendChild(nextImage);
+  const previousImage = document.createElement('a');
+  previousImage.innerHTML = '<img src="./images/details-popup/Vector_4.svg">';
+  previousImage.href = "#";
+  previousImage.classList.add('previous-image');
+  imageBox.appendChild(previousImage);
   popupCard.appendChild(imageBox);
-
-
 
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('project-div');
@@ -198,7 +202,9 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
 }
 const navigateNext = document.querySelectorAll('.next');
 const navigatePrevious = document.querySelectorAll('.previous');
+console.log(navigateNext);
 for (let i = 0; i < closeProjectBtn.length; i += 1) {
+  console.log(navigateNext[i]);
   navigateNext[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
