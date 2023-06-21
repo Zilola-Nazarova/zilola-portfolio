@@ -55,8 +55,7 @@ const projectDetails = [
   },
 ];
 
-const projects = document.querySelectorAll('.work-card');
-for (let i = 0; i < projects.length; i += 1) {
+for (let i = 0; i < projectDetails.length; i += 1) {
   const workSection = document.getElementById('work-section');
   const card = document.createElement('div');
   card.classList.add('work-card', `w${i+1}`);
@@ -90,10 +89,9 @@ for (let i = 0; i < projects.length; i += 1) {
 
   card.appendChild(workInfo);
   workSection.appendChild(card);
+}
 
-  
-
-
+for (let i = 0; i < projectDetails.length; i += 1) {
   const popupCard = document.createElement('div');
   popupCard.id = `project-${i}`;
   popupCard.classList.add('project-details');
@@ -158,7 +156,11 @@ for (let i = 0; i < projects.length; i += 1) {
   document.body.appendChild(popupCard);
 }
 
+
+
+
 const projectBtn = document.querySelectorAll('.see-project');
+
 for (let i = 0; i < projectBtn.length; i += 1) {
   projectBtn[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
