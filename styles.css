@@ -481,6 +481,18 @@ header.unvisible {
   border: 0.5px solid #1a2236;
 }
 
+.project-details .image-box {
+  width: 100%;
+}
+
+.project-details .image-box img {
+  width: 100%;
+}
+
+.project-details .image-box .small-image {
+  display: none;
+}
+
 .project-details .popup-link {
   margin: 29px auto 0 auto;
   background-image: url(./images/details-popup/ic_link.svg);
@@ -940,11 +952,21 @@ header.unvisible {
     height: 32px;
     width: 32px;
   }
-  
-  .project-details > img {
-    width: 100%;
+  .project-details .image-box {
     max-width: 1700px;
     margin: 0 auto 0 auto;
+    overflow: hidden;
+  }
+
+  .project-details .image-box img {
+    margin-bottom: -2px;
+    width: 100%; 
+  }
+
+  .project-details .image-box .small-image {
+    margin-top: -4px;
+    display: inline-block;
+    width: 25%;
   }
 
   .project-details h2 {

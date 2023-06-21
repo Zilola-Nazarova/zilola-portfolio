@@ -113,10 +113,23 @@ for (let i = 0; i < projectDetails.length; i += 1) {
   technologies.classList.add('poppins', 'dark-blue');
   popupCard.appendChild(technologies);
 
+
+  const imageBox = document.createElement('div');
+  imageBox.classList.add('image-box');
   const projectImage = document.createElement('img');
   projectImage.src = projectDetails[i].featured_image;
+  imageBox.appendChild(projectImage);
+  for (let j = 0; j < projectDetails[i].alternative_images.length; j += 1) {
+    const smallImage = document.createElement('img');
+    smallImage.src = projectDetails[i].alternative_images[j];
+    smallImage.classList.add('small-image');
+    imageBox.appendChild(smallImage);
+  }
   // projectImage.classList.add('');
-  popupCard.appendChild(projectImage);
+  
+  popupCard.appendChild(imageBox);
+
+
 
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('project-div');
