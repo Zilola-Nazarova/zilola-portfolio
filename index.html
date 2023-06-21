@@ -179,13 +179,11 @@
     <section id="contact-form" class="">
       <h2 class="dark-blue playfair">Get started</h2>
       <p class="dark-blue poppins">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-      <form id="send-message" action="https://formspree.io/f/xpzegyyg" method="POST">
+      <form action="https://formspree.io/f/xpzegyyg" method="POST">
         <label class="poppins" for="user-name">Your name</label>
         <input type="text" id="user-name" name="user_name" placeholder="Enter your name" maxlength="30" required>
-        <small class="poppins"></small>
         <label class="poppins" for="user-email">Your email</label>
         <input type="email" id="user-email" name="user_email" placeholder="Enter your email." required>
-        <small class="poppins"></small>
         <label class="poppins" for="user-message">Your message</label>
         <textarea id="user-message" name="user_message" placeholder="Enter your message here..." maxlength="500" required></textarea>
         <button class="poppins white" type="submit" >Start collaboration</button>
@@ -205,6 +203,5 @@
   </footer>
   <script src="./popup.js"></script>
   <script src="./script.js"></script>
-  <script src="./validation.js"></script>
 </body>
 </html>
