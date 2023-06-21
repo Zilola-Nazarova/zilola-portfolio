@@ -57,35 +57,72 @@ const projectDetails = [
 
 const projects = document.querySelectorAll('.work-card');
 for (let i = 0; i < projects.length; i += 1) {
+  const workSection = document.getElementById('work-section');
   const card = document.createElement('div');
-  card.id = `project-${i}`;
-  card.classList.add('project-details');
+  card.classList.add('work-card', `w${i+1}`);
+
+  const projectPreview = document.createElement('img');
+  projectPreview.src = projectDetails[i].featured_image;
+  projectPreview.classList.add('project-preview');
+  card.appendChild(projectPreview);
+
+  const workInfo = document.createElement('div');
+  workInfo.classList.add('work-info');
+
+  const cardProjectName = document.createElement('p');
+  cardProjectName.textContent = projectDetails[i].name;
+  cardProjectName.classList.add('poppins', 'project-name', 'white');
+  workInfo.appendChild(cardProjectName);
+
+  const cardTechnologies = document.createElement('ul');
+  cardTechnologies.innerHTML = `<li>${projectDetails[i].technologies[0]}</li>
+  <li>${projectDetails[i].technologies[1]}</li>
+  <li>${projectDetails[i].technologies[2]}</li>`;
+  cardTechnologies.classList.add('poppins', 'dark-blue', 'category-list');
+  workInfo.appendChild(cardTechnologies);
+
+  const seeProject = document.createElement('a');
+  seeProject.textContent = 'See this project';
+  seeProject.href = '#';
+  seeProject.classList.add('see-project', 'white', 'poppins');
+  workInfo.appendChild(seeProject);
+  
+
+  card.appendChild(workInfo);
+  workSection.appendChild(card);
+
+  
+
+
+  const popupCard = document.createElement('div');
+  popupCard.id = `project-${i}`;
+  popupCard.classList.add('project-details');
 
   const closeBtn = document.createElement('a');
   closeBtn.innerHTML = '<img src="./images/details-popup/ic_cross.svg">';
   closeBtn.classList.add('popup-close');
-  card.appendChild(closeBtn);
+  popupCard.appendChild(closeBtn);
 
   const projectName = document.createElement('h2');
   projectName.textContent = projectDetails[i].name;
   projectName.classList.add('poppins', 'dark-blue');
-  card.appendChild(projectName);
+  popupCard.appendChild(projectName);
 
   const technologies = document.createElement('ul');
   technologies.innerHTML = `<li>${projectDetails[i].technologies[0]}</li>
   <li>${projectDetails[i].technologies[1]}</li>
   <li>${projectDetails[i].technologies[2]}</li>`;
   technologies.classList.add('poppins', 'dark-blue');
-  card.appendChild(technologies);
+  popupCard.appendChild(technologies);
 
   const projectImage = document.createElement('img');
   projectImage.src = projectDetails[i].featured_image;
   // projectImage.classList.add('');
-  card.appendChild(projectImage);
+  popupCard.appendChild(projectImage);
 
   const projectDiv = document.createElement('div');
   projectDiv.classList.add('project-div');
-  card.appendChild(projectDiv);
+  popupCard.appendChild(projectDiv);
 
   for (let j = 0; j < projectDetails[i].description.length; j += 1) {
     const projectDecription = document.createElement('p');
@@ -118,7 +155,7 @@ for (let i = 0; i < projects.length; i += 1) {
   nextProject.classList.add('poppins', 'dark-blue', 'navigate-project');
   projectDiv.appendChild(nextProject);
 
-  document.body.appendChild(card);
+  document.body.appendChild(popupCard);
 }
 
 const projectBtn = document.querySelectorAll('.see-project');
