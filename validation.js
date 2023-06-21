@@ -24,3 +24,17 @@ function validateEmail(input, invalidMsg) {
 
 const form = document.querySelector("#send-message");
 
+const EMAIL_LOWERCASE = "Please enter a your email in lower case";
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+
+	// validate the form
+	let emailValid = validateEmail(form.elements["user_email"], EMAIL_LOWERCASE);
+	// if valid, submit the form.
+	if (emailValid) {
+		form.submit();
+	}
+});
+
