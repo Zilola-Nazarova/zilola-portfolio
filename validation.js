@@ -21,3 +21,6 @@ function validateEmail(input, invalidMsg) {
 	}
 	return true;
 }
+
+const form = document.querySelector("#send-message");
+
