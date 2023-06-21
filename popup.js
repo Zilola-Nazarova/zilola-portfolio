@@ -114,21 +114,22 @@ for (let i = 0; i < projectDetails.length; i += 1) {
 
   const imageBox = document.createElement('div');
   imageBox.classList.add('image-box');
-  const projectImage = document.createElement('img');
-  projectImage.src = projectDetails[i].featured_image;
-  imageBox.appendChild(projectImage);
+  const featuredImage = document.createElement('img');
+  featuredImage.src = projectDetails[i].alternative_images[0];
+  featuredImage.classList.add('featured');
+  imageBox.appendChild(featuredImage);
   for (let j = 0; j < projectDetails[i].alternative_images.length; j += 1) {
     const smallImage = document.createElement('img');
     smallImage.src = projectDetails[i].alternative_images[j];
     smallImage.classList.add('small-image');
     imageBox.appendChild(smallImage);
   }
-  const nextImage = document.createElement('a');
+  const nextImage = document.createElement('button');
   nextImage.innerHTML = '<img src="./images/details-popup/Vector_5.svg">';
   nextImage.href = '#';
   nextImage.classList.add('next-image');
   imageBox.appendChild(nextImage);
-  const previousImage = document.createElement('a');
+  const previousImage = document.createElement('button');
   previousImage.innerHTML = '<img src="./images/details-popup/Vector_4.svg">';
   previousImage.href = '#';
   previousImage.classList.add('previous-image');
@@ -199,10 +200,7 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
 
 const navigateNext = document.querySelectorAll('.next');
 const navigatePrevious = document.querySelectorAll('.previous');
-console.log(navigateNext);
-for (let i = 0; i < closeProjectBtn.length; i += 1) {
-  console.log(closeProjectBtn.length);
-  console.log(navigateNext[i]);
+for (let i = 0; i < projectDetails.length; i += 1) {
   navigateNext[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
@@ -213,7 +211,7 @@ for (let i = 0; i < closeProjectBtn.length; i += 1) {
   navigatePrevious[i].addEventListener('click', () => {
     const projectPopup = document.getElementById(`project-${i}`);
     projectPopup.classList.toggle('visible');
-    const previousProject = document.getElementById(`project-${(i - 1) % 6}`);
+    const previousProject = document.getElementById(`project-${Math.abs((i - 1) % 6)}`);
     previousProject.classList.toggle('visible');
   });
 }

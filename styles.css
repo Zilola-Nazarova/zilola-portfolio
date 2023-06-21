@@ -611,7 +611,8 @@ header.unvisible {
     width: 100%;
   }
 
-  .project-details .image-box a {
+  .project-details .image-box button {
+    all: unset;
     position: absolute;
     top: 37%;
     z-index: 1;
