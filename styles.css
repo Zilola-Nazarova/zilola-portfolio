@@ -708,34 +708,37 @@ header.unvisible {
   
   #work-section .work-info {
     opacity: 0;
+    backdrop-filter: blur(10px);
     display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
     justify-content: space-around;
+    transition: opacity ease-out 0.3s;
   }
 
   #work-section .work-card:hover .work-info{
-    opacity: 1;
+    opacity: 0.95;
   }
 
   #work-section div.w6 .work-info {
-    /* height: 57.9%; */
+    height: 57.9%;
   }
 
-  #work-section div.w6 .project-name {
-    font-size: 4.1vw;
-    line-height: 1em;
-    font-weight: 700;
-  }
-
-  #work-section div.w5 .project-name {
-    font-size: 2.7vw;
+  #work-section div .project-name {
+    font-size: min(2.7vw, 40px);;
     line-height: 1.3em;
     font-weight: 700;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  #work-section div.w6 .project-name {
+    overflow: unset;
+    font-size: min(4.1vw, 60px);
+    line-height: 1em;
+    font-weight: 700;
   }
 
   #work-section ul li {
@@ -744,6 +747,7 @@ header.unvisible {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin-right: 20px;
   }
 
   #work-section ul li:last-of-type {
@@ -756,7 +760,7 @@ header.unvisible {
     font-size: min(1.25vw, 18px); /* stylelint-disable-line */
     background-color: #fff;
     width: fit-content;
-    line-height: 1em;
+    line-height: 1.5em;
     padding: 0.66em 53px 0.66em 20px;
   }
 
