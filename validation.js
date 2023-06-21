@@ -12,3 +12,12 @@ function showError(input, message) {
 function showSuccess(input) {
 	return showMessage(input, "", true);
 }
+
+function validateEmail(input, invalidMsg) {
+	const emailRegex = /^[^A-Z\s]+\.[^A-Z\s]+$/;
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
