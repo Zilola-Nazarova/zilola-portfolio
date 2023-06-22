@@ -26,6 +26,9 @@ function storageAvailable(type) {
   }
 }
 
-
+let formData = {};
+var userName = document.getElementById('user-name');
+var email = document.getElementById('user-email');
+var message = document.getElementById('user-message');
 
 
