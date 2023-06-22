@@ -50,3 +50,7 @@ function setValues() {
   document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
   document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
 }
+
+userName.onkeyup = populateStorage;
+email.onkeyup = populateStorage;
+message.onkeyup = populateStorage;
