@@ -31,4 +31,8 @@ var userName = document.getElementById('user-name');
 var email = document.getElementById('user-email');
 var message = document.getElementById('user-message');
 
-
+if (!localStorage.getItem("userData")) {
+  populateStorage();
+} else {
+  setValues();
+}
