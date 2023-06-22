@@ -44,7 +44,11 @@ if (localStorage.length < 1) {
 }
 
 function populateStorage() {
-
+  localStorage.setItem("name", document.getElementById("user-name").value);
+  localStorage.setItem("email", document.getElementById("user-email").value);
+  localStorage.setItem("message", document.getElementById("user-message").value);
+ 
+  setStyles();
 }
 
 function setFormValues() {
