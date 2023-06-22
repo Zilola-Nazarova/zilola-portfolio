@@ -48,10 +48,18 @@ function populateStorage() {
   localStorage.setItem("email", document.getElementById("user-email").value);
   localStorage.setItem("message", document.getElementById("user-message").value);
  
-  setStyles();
+  setFormValues();
 }
+populateStorage();
 
 function setFormValues() {
+  const currentName = localStorage.getItem("name");
+  const currentEmail = localStorage.getItem("email");
+  const currentMessage = localStorage.getItem("message");
+
+  document.getElementById("user-name").value = currentName;
+  document.getElementById("user-email").value = currentEmail;
+  document.getElementById("user-message").value = currentMessage;
 
 }
 
