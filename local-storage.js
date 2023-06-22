@@ -31,6 +31,9 @@ if (storageAvailable("localStorage")) {
   console.log('Storage unavailable');
 }
 
+
+
+
 console.log(localStorage.length);
 console.log(localStorage);
 
@@ -39,4 +42,13 @@ if (localStorage.length < 1) {
 } else {
   setFormValues();
 }
+
+function populateStorage() {
+
+}
+
+function setFormValues() {
+
+}
+
 
