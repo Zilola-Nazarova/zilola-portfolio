@@ -30,3 +30,13 @@ if (storageAvailable("localStorage")) {
 } else {
   console.log('Storage unavailable');
 }
+
+console.log(localStorage.length);
+console.log(localStorage);
+
+if (localStorage.length < 1) {
+  populateStorage();
+} else {
+  setFormValues();
+}
+
