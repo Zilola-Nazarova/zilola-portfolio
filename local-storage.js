@@ -26,31 +26,35 @@ function storageAvailable(type) {
   }
 }
 
-let formData = {};
-var userName = document.getElementById('user-name');
-var email = document.getElementById('user-email');
-var message = document.getElementById('user-message');
 
-if (!localStorage.getItem("userData")) {
-  populateStorage();
+if (storageAvailable("localStorage")) {
+  let formData = {};
+  var userName = document.getElementById('user-name');
+  var email = document.getElementById('user-email');
+  var message = document.getElementById('user-message');
+
+  if (!localStorage.getItem("userData")) {
+    populateStorage();
+  } else {
+    setValues();
+  }
+
+  function populateStorage() {
+    formData.name = document.getElementById('user-name').value;
+    formData.email = document.getElementById('user-email').value;
+    formData.message = document.getElementById('user-message').value;
+    localStorage.setItem("userData", JSON.stringify(formData));
+    setValues();
+  }
+
+  function setValues() {
+    document.getElementById('user-name').value = JSON.parse(localStorage.getItem('userData')).name;
+    document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
+    document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
+  }
+
+  userName.onkeyup = populateStorage;
+  email.onkeyup = populateStorage;
+  message.onkeyup = populateStorage;
 } else {
-  setValues();
 }
-
-function populateStorage() {
-  formData.name = document.getElementById('user-name').value;
-  formData.email = document.getElementById('user-email').value;
-  formData.message = document.getElementById('user-message').value;
-  localStorage.setItem("userData", JSON.stringify(formData));
-  setValues();
-}
-
-function setValues() {
-  document.getElementById('user-name').value = JSON.parse(localStorage.getItem('userData')).name;
-  document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
-  document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
-}
-
-userName.onkeyup = populateStorage;
-email.onkeyup = populateStorage;
-message.onkeyup = populateStorage;
