@@ -44,3 +44,9 @@ function populateStorage() {
   localStorage.setItem("userData", JSON.stringify(formData));
   setValues();
 }
+
+function setValues() {
+  document.getElementById('user-name').value = JSON.parse(localStorage.getItem('userData')).name;
+  document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
+  document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
+}
