@@ -192,6 +192,7 @@ a.see-project {
   display: block;
   width: 100%;
   padding: 0 42.41% 0 27.24%;
+  transition: all 0.3s ease;
 }
 
 .knowledge {
@@ -341,6 +342,7 @@ footer {
   cursor: pointer;
   color: #fff;
   transform: scale(1.05);
+  background-image: url(./images/ic_link_white.png);
 }
 
 #contact-form button:hover,
@@ -351,6 +353,10 @@ a.see-project:hover,
   border: 1px solid #1a2236;
   background-color: white;
   color: #1a2236;
+}
+
+#about-myself-section button:hover {
+  background-image: url(./images/ic_download_blue.svg);
 }
 
 #contact-form button:active,
@@ -371,6 +377,11 @@ a.see-project:active,
 
 #footer a {
   display: flex;
+  transition: all 0.3s ease;
+}
+
+#footer a:hover {
+  transform: scale(1.05);
 }
 
 #footer ul li + li {
@@ -763,6 +774,9 @@ a.see-project:active,
     width: fit-content;
     height: 27px;
     background-image: url(./images/ic-link_teal.png);
+  }
+  #footer button:hover {
+    background-image: url(./images/ic_download.png);
   }
 
   #footer span {
