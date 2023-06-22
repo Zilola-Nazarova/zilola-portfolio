@@ -37,10 +37,9 @@
 // }
 
 const inputArray = document.getElementById('send-message');
-console.log(inputArray);
 
 for (let i = 0; i < inputArray.length - 1; i++) {
-  inputArray[i].onchange = populateStorage;
+  inputArray[i].onkeypress = populateStorage;
   function populateStorage() {
     localStorage.setItem(inputArray[i].name, inputArray[i].value);
   }
