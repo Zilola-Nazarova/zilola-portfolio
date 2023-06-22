@@ -24,3 +24,9 @@ function storageAvailable(type) {
     );
   }
 }
+
+if (storageAvailable("localStorage")) {
+  console.log('Storage is available');
+} else {
+  console.log('Storage unavailable');
+}
