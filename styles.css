@@ -1072,7 +1072,7 @@ header.unvisible {
     height: 27px;
     background-image: url(./images/ic-link_teal.png);
   }
-  
+
   #footer button:hover {
     background-image: url(./images/ic_download.png);
   }
