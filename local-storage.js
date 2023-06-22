@@ -36,3 +36,11 @@ if (!localStorage.getItem("userData")) {
 } else {
   setValues();
 }
+
+function populateStorage() {
+  formData.name = document.getElementById('user-name').value;
+  formData.email = document.getElementById('user-email').value;
+  formData.message = document.getElementById('user-message').value;
+  localStorage.setItem("userData", JSON.stringify(formData));
+  setValues();
+}
