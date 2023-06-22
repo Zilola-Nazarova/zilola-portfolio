@@ -247,6 +247,7 @@ a.see-project {
   padding: 6.625rem 0.875rem 1.94rem 1.125rem;
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - 136px);
 }
 
 #contact-form h2 {
@@ -369,7 +370,7 @@ a.see-project:active,
 }
 
 #footer ul {
-  margin-top: 1.56rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: space-around;
   list-style: none;
