@@ -50,7 +50,6 @@ function populateStorage() {
  
   setFormValues();
 }
-populateStorage();
 
 function setFormValues() {
   const currentName = localStorage.getItem("name");
@@ -62,5 +61,9 @@ function setFormValues() {
   document.getElementById("user-message").value = currentMessage;
 
 }
+
+document.getElementById("user-name").onchange = populateStorage;
+document.getElementById("user-email").onchange = populateStorage;
+document.getElementById("user-message").onchange = populateStorage;
 
 
