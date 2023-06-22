@@ -26,43 +26,6 @@ function storageAvailable(type) {
   }
 }
 
-const inputArray = document.getElementById('send-message');
 
-if (storageAvailable('localStorage')) {
-  if (localStorage.length < 1) {
-    populateStorage();
-  } else {
-    setInputValues();
-  }
-} else {
-}
-// const formData = { name: nameInput.value, email: emailInput.value, body: bodyInput.value, }; 
-const formData = {};
-// for (let i = 0; i < inputArray.length - 1; i++) {
-//   let formData[key] = inputArray[i];
-//   key.value = "";
-// }
-
-for (let i = 0; i < inputArray.length - 1; i++) {
-  const elem = inputArray[i];
-  formData[elem.name] = elem.value;
-  inputArray[i].onkeypress = populateStorage;
-  // setInputValues();
-}
-
-function populateStorage() {
-  localStorage.setItem('data', JSON.stringify(formData));
-  
-}
-
-console.log(localStorage);
-// console.log(formData);
-
-// function setInputValues() {
-//   for (let i = 0; i < inputArray.length - 1; i++) {
-//     const putValue = localStorage.getItem(inputArray[i].name);
-//  inputArray[i].value = putValue;
-//   }
-// }
 
 
