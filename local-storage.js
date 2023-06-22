@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 function storageAvailable(type) {
   let storage;
   try {
@@ -26,35 +25,36 @@ function storageAvailable(type) {
   }
 }
 
+const formData = {};
 
-if (storageAvailable("localStorage")) {
-  let formData = {};
-  var userName = document.getElementById('user-name');
-  var email = document.getElementById('user-email');
-  var message = document.getElementById('user-message');
+function setValues() {
+  document.getElementById('user-name').value = JSON.parse(localStorage.getItem('userData')).name;
+  document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
+  document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
+}
 
-  if (!localStorage.getItem("userData")) {
+function populateStorage() {
+  formData.name = document.getElementById('user-name').value;
+  formData.email = document.getElementById('user-email').value;
+  formData.message = document.getElementById('user-message').value;
+  localStorage.setItem('userData', JSON.stringify(formData));
+  setValues();
+}
+
+if (storageAvailable('localStorage')) {
+  const userName = document.getElementById('user-name');
+  const email = document.getElementById('user-email');
+  const message = document.getElementById('user-message');
+
+  if (!localStorage.getItem('userData')) {
     populateStorage();
   } else {
     setValues();
-  }
-
-  function populateStorage() {
-    formData.name = document.getElementById('user-name').value;
-    formData.email = document.getElementById('user-email').value;
-    formData.message = document.getElementById('user-message').value;
-    localStorage.setItem("userData", JSON.stringify(formData));
-    setValues();
-  }
-
-  function setValues() {
-    document.getElementById('user-name').value = JSON.parse(localStorage.getItem('userData')).name;
-    document.getElementById('user-email').value = JSON.parse(localStorage.getItem('userData')).email;
-    document.getElementById('user-message').value = JSON.parse(localStorage.getItem('userData')).message;
   }
 
   userName.onkeyup = populateStorage;
   email.onkeyup = populateStorage;
   message.onkeyup = populateStorage;
 } else {
+  // alert smth
 }
