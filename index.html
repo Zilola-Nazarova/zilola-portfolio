@@ -11,19 +11,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="">
     <nav>
       <ul class="navigation poppins dark-blue">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#headline">Home</a></li>
+        <li><a href="#work-section">Portfolio</a></li>
+        <li><a href="#about-myself-section">About</a></li>
+        <li><a href="#contact-form">Contact</a></li>
       </ul>
       <a class="menu" href="#"><img src="./images/ic_menu.png"></a>
     </nav>
+    <div class="mobile-menu">
+      <a><img id="close-btn" src="./images/popup-close.png"></a>
+      <ul class="menu-list poppins">
+        <li><a href="#headline">Hello</a></li>
+        <li><a href="#work-section">Portfolio</a></li>
+        <li><a href="#about-myself-section">About</A></a></li>
+        <li><a href="#contact-form">Contact</a></li>
+      </ul>
+    </div>   
   </header>
+
   <main>
-    <section id="headline">
+    <section id="headline" class="">
       <div class="text-block">
         <h1 class="playfair dark-blue">Zilola Nazarova</h1>
         <p class="poppins dark-blue">Hello! I am a software developer! I can help you build a product, 
@@ -31,7 +41,7 @@
         <br><br>
         If you like what you see and have a project you need coded, 
         don’t hesitate to contact me.</p>
-        <button class="collaboration white poppins">
+        <button type="submit" class="collaboration white poppins">
           Start collaboration
         </button>        
       </div>
@@ -40,100 +50,23 @@
       </div>  
     </section>
 
-    <section id="work-section">
+    <section id="work-section" class="">
       <h2 class="playfair dark-blue">Projects</h2>
       <div class="dec-div-2"><img class="decoration" src="./images/image-geometry_2.png"></div>
       <div class="dec-div-3"><img class="decoration" src="./images/image-geometry_3.png"></div>
       <div class="dec-div-4"><img class="decoration" src="./images/image-geometry_4.png"></div>
       <div class="dec-div-5"><img class="decoration" src="./images/image-geometry_5.png"></div>
-      <div class="work-card w1">
-        <img class="project-preview" src="./images/project-1.png" alt="Preview of the project-1">
-        <img class="project-preview" src="./images/Project-1-big.png" alt="Preview of the project-1">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>      
-      </div>
-      <div class="work-card w2">
-        <img class="project-preview" src="./images/project-2.png" alt="Preview of the project-2">
-        <img class="project-preview" src="./images/Project-2-big.png" alt="Preview of the project-2">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>
-      </div>
-      <div class="work-card w3">
-        <img class="project-preview" src="./images/project-3.png" alt="Preview of the project-3">
-        <img class="project-preview" src="./images/Project-3-big.png" alt="Preview of the project-3">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>
-      </div>
-      <div class="work-card w4">
-        <img class="project-preview" src="./images/project-4.png" alt="Preview of the project-4">
-        <img class="project-preview" src="./images/Project-4-big.png" alt="Preview of the project-4">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>
-      </div>
-      <div class="work-card w5">
-        <img class="project-preview" src="./images/project-5.png" alt="Preview of the project-5">
-        <img class="project-preview" src="./images/Project-5-big.png" alt="Preview of the project-5">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>
-      </div>
-      <div class="work-card w6">
-        <img class="project-preview" src="./images/project-6.png" alt="Preview of the project-6">
-        <img class="project-preview" src="./images/Project-6-big.png" alt="Preview of the project-6">
-        <div class="work-info">
-          <p class="project-name white poppins">Project name goes here</p>
-          <ul class="category-list dark-blue poppins">
-            <li class="category">HTML/CSS</li>
-            <li class="category">Ruby on Rails</li>
-            <li class="category">JavaScript</li>
-          </ul>
-          <a href="#" class="see-project white poppins">See this project</a>
-        </div>
-      </div>
+      
     </section>
 
-    <section id="about-myself-section">
+    <section id="about-myself-section" class="">
       <div>
         <h2 class="dark-blue playfair">About</h2>
         <p class="about-me dark-blue poppins">I can help you build a product, feature or website 
           Look through some of my work and experience! If you 
           like what you see and have a project you need coded, 
           don’t hesitate to contact me.</p>
-        <button class="white poppins"><p>Get my CV</p></button>
+        <button type="submit" class="white poppins"><p>Get my CV</p></button>
       </div>
       <article class="knowledge poppins white">
         <div class="languages">
@@ -166,22 +99,24 @@
         </div>
       </article>   
     </section>
-    <section id="contact-form">
+    <section id="contact-form" class="">
       <h2 class="dark-blue playfair">Get started</h2>
       <p class="dark-blue poppins">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-      <form action="https://formspree.io/f/xpzegyyg" method="POST">
+      <form id="send-message" action="https://formspree.io/f/xpzegyyg" method="POST">
         <label class="poppins" for="user-name">Your name</label>
         <input type="text" id="user-name" name="user_name" placeholder="Enter your name" maxlength="30" required>
+        <small class="poppins"></small>
         <label class="poppins" for="user-email">Your email</label>
         <input type="email" id="user-email" name="user_email" placeholder="Enter your email." required>
+        <small class="poppins"></small>
         <label class="poppins" for="user-message">Your message</label>
         <textarea id="user-message" name="user_message" placeholder="Enter your message here..." maxlength="500" required></textarea>
         <button class="poppins white" type="submit" >Start collaboration</button>
       </form>
     </section>
   </main>
-  <footer id="footer">
-    <button class="poppins"><span>Get my Resume</span></button>
+  <footer id="footer" class="">
+    <button type="submit" class="poppins"><span>Get my Resume</span></button>
     <ul class="social-links">
       <li><a href="#"><img src="./images/ic_stackoverflow.png" alt="stackoverflow-icon"></a></li>
       <li><a href="#"><img src="./images/ic_github.png" alt="github-icon"></a></li>
@@ -191,5 +126,9 @@
       <li><a href="#"><img src="./images/ic_angellist.png" alt="angellist-icon"></a></li>
     </ul>
   </footer>
+  <script src="./popup.js"></script>
+  <script src="./script.js"></script>
+  <script src="./validation.js"></script>
+  <script src="./local-storage.js"></script>
 </body>
 </html>
