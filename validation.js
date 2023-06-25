@@ -16,9 +16,9 @@ function showError(input, message) {
 // }
 
 function validateEmail(input, invalidMsg) {
-  const emailRegex = /^[^A-Z\s]+\.[^A-Z\s]+$/;
+  const emailRegex = /[A-Z]/;
   const email = input.value.trim();
-  if (!emailRegex.test(email)) {
+  if (emailRegex.test(email)) {
     return showError(input, invalidMsg);
   }
   return true;
