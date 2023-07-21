@@ -5,8 +5,8 @@ const projectDetails = [
     featured_image: './images/details-popup/project-1-featured.svg',
     alternative_images: ['./images/details-popup/project-1-small-1.svg', './images/details-popup/project-1-small-2.svg', './images/details-popup/project-1-small-3.svg', './images/details-popup/project-1-small-4.svg'],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    link_version: 'https://zilola-nazarova.github.io/zilola-portfolio/',
-    link_source: 'https://github.com/Zilola-Nazarova/zilola-portfolio',
+    link_version: 'https://zilola-nazarova.github.io/capstone-project-module-1/',
+    link_source: 'https://github.com/Zilola-Nazarova/capstone-project-module-1',
   },
   {
     name: 'Project name goes here',
