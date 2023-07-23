@@ -1,5 +1,5 @@
 # zilola-portfolio
-This is my portfolio. I created it studying at Microverse.
+This is my Personal Portfolio website. Visitors can acquire important information about me, send me an Email and visit Live Demos and Source codes of my recent projects. Built with HTML/CSS.
 
 <a name="readme-top"></a>
 
